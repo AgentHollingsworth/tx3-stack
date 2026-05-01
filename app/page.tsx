@@ -11,7 +11,6 @@ import { RiskReversal } from "@/components/hub/RiskReversal";
 import { SolutionPillars } from "@/components/hub/SolutionPillars";
 import { TierLadder } from "@/components/hub/TierLadder";
 import { UrgencySection } from "@/components/hub/UrgencySection";
-import { Footer } from "@/components/layout/Footer";
 
 export default function HubPage() {
   return (
@@ -29,7 +28,6 @@ export default function HubPage() {
       <UrgencySection />
       <FAQ />
       <FinalCTA />
-      <Footer />
     </>
   );
 }
