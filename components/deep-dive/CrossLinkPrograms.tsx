@@ -14,8 +14,10 @@ type ProgramCard = {
   brand: Brand;
   /** Brand-colored top accent bar. */
   accentBar: string;
-  /** Eyebrow color. */
+  /** Eyebrow color (static). */
   eyebrowText: string;
+  /** Title color shift on card hover (static; needed for Tailwind JIT). */
+  hoverTitle: string;
   eyebrow: string;
   title: string;
   description: string;
@@ -32,6 +34,7 @@ const PROGRAMS: ProgramCard[] = [
     brand: "markets",
     accentBar: "bg-exec-gold",
     eyebrowText: "text-exec-gold",
+    hoverTitle: "group-hover:text-exec-gold",
     eyebrow: "EXECUTION",
     title: "TX3 Markets",
     description:
@@ -45,6 +48,7 @@ const PROGRAMS: ProgramCard[] = [
     brand: "funding",
     accentBar: "bg-earn-gradient",
     eyebrowText: "text-earn-green",
+    hoverTitle: "group-hover:text-earn-green",
     eyebrow: "EARN · FX",
     title: "TX3 Funding FX",
     description:
@@ -58,6 +62,7 @@ const PROGRAMS: ProgramCard[] = [
     brand: "funding",
     accentBar: "bg-earn-gradient",
     eyebrowText: "text-earn-green",
+    hoverTitle: "group-hover:text-earn-green",
     eyebrow: "EARN · FUTURES",
     title: "TX3 Funding Futures",
     description:
@@ -71,6 +76,7 @@ const PROGRAMS: ProgramCard[] = [
     brand: "memo",
     accentBar: "bg-edge-gradient",
     eyebrowText: "text-edge-teal",
+    hoverTitle: "group-hover:text-edge-teal",
     eyebrow: "EDGE",
     title: "Market Memo",
     description:
@@ -134,10 +140,12 @@ export function CrossLinkPrograms({ currentProgram }: Props) {
               href={p.href}
               aria-label={`${p.title} — ${p.description}`}
               className={cn(
-                "group relative flex flex-col overflow-hidden rounded-2xl border border-tx3-border bg-tx3-charcoal p-6 transition-all duration-300",
+                "group relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-tx3-border bg-tx3-charcoal p-6 transition-all duration-300",
                 p.hoverBorder,
                 p.hoverGlow,
-                "hover:-translate-y-0.5",
+                // More pronounced lift + subtle background lighten = clear "clickable card" affordance
+                "hover:-translate-y-1 hover:bg-[#1a1a1a]",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tx3-gold focus-visible:ring-offset-2 focus-visible:ring-offset-tx3-black",
               )}
             >
               {/* Brand-colored accent bar */}
@@ -146,8 +154,21 @@ export function CrossLinkPrograms({ currentProgram }: Props) {
                 className={cn("absolute inset-x-0 top-0 h-1", p.accentBar)}
               />
 
-              {/* Brand logo */}
-              <div className="mb-5 flex h-10 items-center">
+              {/* Top-right arrow indicator — universal "this is a link" cue */}
+              <div
+                aria-hidden="true"
+                className={cn(
+                  "absolute right-5 top-5 inline-flex size-8 items-center justify-center rounded-full border border-tx3-border bg-tx3-near-black/80 opacity-60 transition-all duration-300",
+                  "group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100",
+                  p.eyebrowText,
+                  p.hoverBorder,
+                )}
+              >
+                <ArrowUpRight className="size-4" strokeWidth={2.25} />
+              </div>
+
+              {/* Brand logo (right padding so it doesn't collide with the arrow indicator) */}
+              <div className="mb-5 flex h-10 items-center pr-12">
                 <BrandLogo
                   brand={p.brand}
                   variant="color"
@@ -166,8 +187,13 @@ export function CrossLinkPrograms({ currentProgram }: Props) {
                 {p.eyebrow}
               </div>
 
-              {/* Title */}
-              <h3 className="mb-2 font-display text-lg font-bold text-tx3-white md:text-xl">
+              {/* Title — color shifts to pillar accent on hover for clear link affordance */}
+              <h3
+                className={cn(
+                  "mb-2 font-display text-lg font-bold text-tx3-white transition-colors md:text-xl",
+                  p.hoverTitle,
+                )}
+              >
                 {p.title}
               </h3>
 
@@ -176,14 +202,16 @@ export function CrossLinkPrograms({ currentProgram }: Props) {
                 {p.description}
               </p>
 
-              {/* Footer cue */}
+              {/* Footer cue — underline solidifies on hover */}
               <div
                 className={cn(
                   "mt-auto inline-flex items-center gap-1 font-mono text-[11px] tracking-widest uppercase transition-transform group-hover:translate-x-0.5",
                   p.eyebrowText,
                 )}
               >
-                Learn more
+                <span className="underline decoration-current/40 underline-offset-4 transition-colors group-hover:decoration-current">
+                  Learn more
+                </span>
                 <ArrowUpRight className="size-3.5" strokeWidth={2.5} />
               </div>
             </Link>
