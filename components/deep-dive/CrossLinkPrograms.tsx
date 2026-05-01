@@ -1,0 +1,195 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { BrandLogo, type Brand } from "@/components/shared/BrandLogo";
+import { cn } from "@/lib/utils";
+
+export type CrossLinkProgram =
+  | "markets"
+  | "funding-fx"
+  | "funding-futures"
+  | "memo";
+
+type ProgramCard = {
+  key: CrossLinkProgram;
+  brand: Brand;
+  /** Brand-colored top accent bar. */
+  accentBar: string;
+  /** Eyebrow color. */
+  eyebrowText: string;
+  eyebrow: string;
+  title: string;
+  description: string;
+  href: string;
+  /** Brand-colored hover glow. */
+  hoverGlow: string;
+  /** Brand-colored hover border. */
+  hoverBorder: string;
+};
+
+const PROGRAMS: ProgramCard[] = [
+  {
+    key: "markets",
+    brand: "markets",
+    accentBar: "bg-exec-gold",
+    eyebrowText: "text-exec-gold",
+    eyebrow: "EXECUTION",
+    title: "TX3 Markets",
+    description:
+      "$12/lot direct + $3/lot indirect. Lifetime brokerage commissions.",
+    href: "/markets",
+    hoverGlow: "hover:shadow-exec-glow",
+    hoverBorder: "hover:border-exec-gold/40",
+  },
+  {
+    key: "funding-fx",
+    brand: "funding",
+    accentBar: "bg-earn-gradient",
+    eyebrowText: "text-earn-green",
+    eyebrow: "EARN · FX",
+    title: "TX3 Funding FX",
+    description:
+      "5-tier ladder up to 20%. Plus profit share on funded traders.",
+    href: "/funding-fx",
+    hoverGlow: "hover:shadow-earn-glow",
+    hoverBorder: "hover:border-earn-green/40",
+  },
+  {
+    key: "funding-futures",
+    brand: "funding",
+    accentBar: "bg-earn-gradient",
+    eyebrowText: "text-earn-green",
+    eyebrow: "EARN · FUTURES",
+    title: "TX3 Funding Futures",
+    description:
+      "10–15% commission on every Topstep-powered futures challenge.",
+    href: "/funding-futures",
+    hoverGlow: "hover:shadow-earn-glow",
+    hoverBorder: "hover:border-earn-green/40",
+  },
+  {
+    key: "memo",
+    brand: "memo",
+    accentBar: "bg-edge-gradient",
+    eyebrowText: "text-edge-teal",
+    eyebrow: "EDGE",
+    title: "Market Memo",
+    description:
+      "15% recurring. For life. The stickiest product in the stack.",
+    href: "/memo",
+    hoverGlow: "hover:shadow-edge-glow",
+    hoverBorder: "hover:border-edge-teal/40",
+  },
+];
+
+type Props = {
+  /** Current page — that program is excluded so only the OTHER 3 render. */
+  currentProgram: CrossLinkProgram;
+};
+
+/**
+ * Cross-link section that appears at the bottom of every deep-dive page,
+ * just above the DeepDiveFinalCTA. Renders three pillar cards linking to
+ * the OTHER programs to keep visitors moving through the funnel instead
+ * of dead-ending at one program.
+ */
+export function CrossLinkPrograms({ currentProgram }: Props) {
+  const others = PROGRAMS.filter((p) => p.key !== currentProgram);
+
+  return (
+    <section
+      id="cross-link-programs"
+      className="relative bg-tx3-black py-20 md:py-28"
+    >
+      {/* Thin gold top border */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-px bg-tx3-gold/40"
+      />
+
+      <div className="mx-auto max-w-6xl px-6 md:px-10">
+        {/* Section header */}
+        <div className="mx-auto mb-12 max-w-3xl text-center md:mb-14">
+          <div className="mb-3 font-mono text-xs tracking-widest text-tx3-gold uppercase">
+            TX3 Stack
+          </div>
+          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-4xl">
+            One audience. Three brands.{" "}
+            <span className="bg-stack-gradient bg-clip-text text-transparent">
+              Compounding revenue.
+            </span>
+          </h2>
+          <p className="mt-4 text-tx3-off-white/75 md:text-lg">
+            You're not limited to one program.{" "}
+            <strong className="font-semibold text-tx3-white">
+              Stack them all.
+            </strong>
+          </p>
+        </div>
+
+        {/* 3 cards */}
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+          {others.map((p) => (
+            <Link
+              key={p.key}
+              href={p.href}
+              aria-label={`${p.title} — ${p.description}`}
+              className={cn(
+                "group relative flex flex-col overflow-hidden rounded-2xl border border-tx3-border bg-tx3-charcoal p-6 transition-all duration-300",
+                p.hoverBorder,
+                p.hoverGlow,
+                "hover:-translate-y-0.5",
+              )}
+            >
+              {/* Brand-colored accent bar */}
+              <div
+                aria-hidden="true"
+                className={cn("absolute inset-x-0 top-0 h-1", p.accentBar)}
+              />
+
+              {/* Brand logo */}
+              <div className="mb-5 flex h-10 items-center">
+                <BrandLogo
+                  brand={p.brand}
+                  variant="color"
+                  orientation="horizontal"
+                  width={p.brand === "memo" ? 140 : 120}
+                />
+              </div>
+
+              {/* Eyebrow */}
+              <div
+                className={cn(
+                  "mb-2 font-mono text-[10px] tracking-widest uppercase",
+                  p.eyebrowText,
+                )}
+              >
+                {p.eyebrow}
+              </div>
+
+              {/* Title */}
+              <h3 className="mb-2 font-display text-lg font-bold text-tx3-white md:text-xl">
+                {p.title}
+              </h3>
+
+              {/* Description */}
+              <p className="mb-5 text-sm leading-relaxed text-tx3-off-white/80">
+                {p.description}
+              </p>
+
+              {/* Footer cue */}
+              <div
+                className={cn(
+                  "mt-auto inline-flex items-center gap-1 font-mono text-[11px] tracking-widest uppercase transition-transform group-hover:translate-x-0.5",
+                  p.eyebrowText,
+                )}
+              >
+                Learn more
+                <ArrowUpRight className="size-3.5" strokeWidth={2.5} />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

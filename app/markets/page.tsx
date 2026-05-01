@@ -13,6 +13,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { EarningsCalculator } from "@/components/shared/EarningsCalculator";
+import { CrossLinkPrograms } from "@/components/deep-dive/CrossLinkPrograms";
 import { DeepDiveHero } from "@/components/deep-dive/DeepDiveHero";
 import { DeepDiveFinalCTA } from "@/components/deep-dive/DeepDiveFinalCTA";
 import { PartnerCompensation } from "@/components/deep-dive/PartnerCompensation";
@@ -345,6 +346,8 @@ export default function MarketsPage() {
           },
         ]}
       />
+
+      <CrossLinkPrograms currentProgram="markets" />
 
       <DeepDiveFinalCTA
         pillar="execution"
