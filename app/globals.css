@@ -46,6 +46,52 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* TX3 STACK — parent brand */
+  --color-tx3-black: #000000;
+  --color-tx3-near-black: #0a0a0a;
+  --color-tx3-charcoal: #141414;
+  --color-tx3-border: #1f1f1f;
+  --color-tx3-white: #ffffff;
+  --color-tx3-off-white: #f5f5f5;
+  --color-tx3-muted: #8a8a8a;
+  --color-tx3-gold: #ffb81f;
+
+  /* EDGE — Market Memo */
+  --color-edge-teal: #1fb6c1;
+  --color-edge-blue-mid: #1e90ff;
+  --color-edge-blue-deep: #1565f0;
+
+  /* EXECUTION — TX3 Markets */
+  --color-exec-gold: #ffb81f;
+  --color-exec-amber: #f59e0b;
+
+  /* EARN — TX3 Funding */
+  --color-earn-green: #3fe26b;
+  --color-earn-teal: #14b8a6;
+  --color-earn-blue: #1565f0;
+
+  /* Pillar gradients */
+  --background-image-stack-gradient: linear-gradient(
+    90deg,
+    #ffb81f 0%,
+    #3fe26b 33%,
+    #14b8a6 50%,
+    #1565f0 75%,
+    #1fb6c1 100%
+  );
+  --background-image-edge-gradient: linear-gradient(135deg, #1fb6c1 0%, #1565f0 100%);
+  --background-image-earn-gradient: linear-gradient(135deg, #3fe26b 0%, #1565f0 100%);
+  --background-image-gold-gradient: linear-gradient(135deg, #ffb81f 0%, #f59e0b 100%);
+
+  /* Pillar glows */
+  --shadow-edge-glow: 0 0 40px rgba(31, 182, 193, 0.4);
+  --shadow-exec-glow: 0 0 40px rgba(255, 184, 31, 0.4);
+  --shadow-earn-glow: 0 0 40px rgba(63, 226, 107, 0.4);
+
+  /* Display / body / mono families */
+  --font-display: var(--font-geist-sans), "Inter Tight", sans-serif;
+  --font-body: "Inter", var(--font-geist-sans), sans-serif;
 }
 
 :root {
@@ -81,6 +127,39 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* TX3 STACK — raw tokens (Section 4.1 of brief) */
+  --tx3-black: #000000;
+  --tx3-near-black: #0a0a0a;
+  --tx3-charcoal: #141414;
+  --tx3-border: #1f1f1f;
+  --tx3-white: #ffffff;
+  --tx3-off-white: #f5f5f5;
+  --tx3-muted: #8a8a8a;
+  --tx3-gold: #ffb81f;
+
+  --edge-teal: #1fb6c1;
+  --edge-blue-mid: #1e90ff;
+  --edge-blue-deep: #1565f0;
+  --edge-glow: rgba(31, 182, 193, 0.4);
+
+  --exec-gold: #ffb81f;
+  --exec-amber: #f59e0b;
+  --exec-glow: rgba(255, 184, 31, 0.4);
+
+  --earn-green: #3fe26b;
+  --earn-teal: #14b8a6;
+  --earn-blue: #1565f0;
+  --earn-glow: rgba(63, 226, 107, 0.4);
+
+  --stack-gradient: linear-gradient(
+    90deg,
+    #ffb81f 0%,
+    #3fe26b 33%,
+    #14b8a6 50%,
+    #1565f0 75%,
+    #1fb6c1 100%
+  );
 }
 
 .dark {

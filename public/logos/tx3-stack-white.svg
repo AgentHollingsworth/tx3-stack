@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="TX3 Stack">
+  <title>TX3 Stack</title>
+  <g transform="translate(50 10) skewX(-8)" fill="#ffffff" fill-rule="evenodd">
+    <!-- T -->
+    <path d="M 0 0 H 80 V 22 H 52 V 100 H 28 V 22 H 0 Z" />
+    <!-- X (two angular crossing stripes) -->
+    <g transform="translate(100 0)">
+      <path d="M 0 0 H 22 L 90 78 V 100 H 68 L 0 22 Z M 68 0 H 90 V 22 L 22 100 H 0 V 78 Z" />
+    </g>
+    <!-- 3 (top bar, right connector, middle protrusion, bottom bar) -->
+    <g transform="translate(212 0)">
+      <path d="M 0 0 H 78 V 22 H 0 Z M 56 22 H 78 V 78 H 56 Z M 28 38 H 56 V 60 H 28 Z M 0 78 H 78 V 100 H 0 Z" />
+    </g>
+  </g>
+  <text
+    x="180" y="182"
+    font-family="Impact, 'Arial Black', 'Helvetica Neue', sans-serif"
+    font-size="50" font-weight="900" font-style="italic"
+    letter-spacing="6" text-anchor="middle"
+    fill="#ffffff"
+  >STACK</text>
+</svg>
