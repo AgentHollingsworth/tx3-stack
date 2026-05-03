@@ -3,11 +3,8 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { CTAButton } from "@/components/shared/CTAButton";
+import { P } from "@/components/shared/Placeholder";
 import { PrismaticRibbon } from "@/components/shared/PrismaticRibbon";
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
 
 const NEXT_STEPS = [
   {

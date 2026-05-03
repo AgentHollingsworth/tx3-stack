@@ -6,11 +6,8 @@ import {
   Sparkles,
 } from "lucide-react";
 import { PartnerSeal } from "@/components/shared/PartnerSeal";
+import { P } from "@/components/shared/Placeholder";
 import { cn } from "@/lib/utils";
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
 
 const TIMELINE = [
   {

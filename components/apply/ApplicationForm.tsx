@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Check, ChevronDown, Loader2 } from "lucide-react";
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { CTAButton } from "@/components/shared/CTAButton";
+import { P } from "@/components/shared/Placeholder";
 import { SuccessState } from "@/components/apply/SuccessState";
 import {
   AUDIENCE_SIZES,
@@ -74,10 +75,6 @@ const EMPTY: FormData = {
 };
 
 // ---- Helpers -----------------------------------------------------------
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
 
 const isValidEmail = (s: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
 

@@ -160,6 +160,43 @@
     #1565f0 75%,
     #1fb6c1 100%
   );
+
+  /* TX3 STACK — semantic surfaces (from design system colors_and_type.css) */
+  --bg-primary: var(--tx3-black);
+  --bg-section: var(--tx3-near-black);
+  --bg-card: var(--tx3-charcoal);
+  --bg-overlay: rgba(20, 20, 20, 0.8);
+  --border-default: var(--tx3-border);
+  --border-hover: rgba(138, 138, 138, 0.5);
+  --border-gold: rgba(255, 184, 31, 0.3);
+
+  /* TX3 STACK — semantic text */
+  --fg-primary: var(--tx3-white);
+  --fg-secondary: rgba(245, 245, 245, 0.85);
+  --fg-tertiary: rgba(245, 245, 245, 0.7);
+  --fg-muted: var(--tx3-muted);
+  --fg-gold: var(--tx3-gold);
+  --fg-placeholder: rgba(255, 184, 31, 0.95);
+
+  /* Tighter gradient siblings of --stack-gradient (already in @theme as utilities) */
+  --edge-gradient: linear-gradient(135deg, #1fb6c1 0%, #1565f0 100%);
+  --earn-gradient: linear-gradient(135deg, #3fe26b 0%, #1565f0 100%);
+  --gold-gradient: linear-gradient(135deg, #ffb81f 0%, #f59e0b 100%);
+
+  /* Glow / card shadows used by signature surfaces */
+  --shadow-edge-glow: 0 0 40px rgba(31, 182, 193, 0.4);
+  --shadow-exec-glow: 0 0 40px rgba(255, 184, 31, 0.4);
+  --shadow-earn-glow: 0 0 40px rgba(63, 226, 107, 0.4);
+  --shadow-gold-soft: 0 0 32px rgba(255, 184, 31, 0.45);
+  --shadow-card: 0 0 60px rgba(255, 184, 31, 0.08);
+  --shadow-cohort: 0 0 60px rgba(255, 184, 31, 0.15);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 150ms;
+  --dur-base: 200ms;
+  --dur-slow: 300ms;
 }
 
 .dark {
@@ -205,5 +242,142 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+/* ==========================================================================
+   TX3 STACK — Design system utility classes
+   Source: tx3-stack-design / colors_and_type.css (semantic typography)
+   These are the canonical typography + gradient text utilities. Use these
+   in new code instead of hand-spelling the classes. Existing inline forms
+   continue to work — adoption is incremental.
+   ========================================================================== */
+
+@layer components {
+  /* Hero H1 — page-opener headline */
+  .h-hero {
+    font-family: var(--font-display, var(--font-sans));
+    font-weight: 800;
+    font-size: clamp(2.25rem, 5vw + 1rem, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--fg-primary);
+  }
+
+  /* Section H2 — section-opener heading */
+  .h-section {
+    font-family: var(--font-display, var(--font-sans));
+    font-weight: 700;
+    font-size: clamp(1.875rem, 3vw + 0.75rem, 3rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--fg-primary);
+  }
+
+  /* Card H3 */
+  .h-card {
+    font-family: var(--font-display, var(--font-sans));
+    font-weight: 700;
+    font-size: clamp(1.25rem, 1.5vw + 0.75rem, 1.875rem);
+    line-height: 1.15;
+    color: var(--fg-primary);
+  }
+
+  /* Pillar word — giant uppercase EDGE / EXECUTION / EARN */
+  .h-pillar {
+    font-family: var(--font-display, var(--font-sans));
+    font-weight: 800;
+    font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  /* Stat number — tier commission %, big numbers */
+  .h-stat {
+    font-family: var(--font-display, var(--font-sans));
+    font-weight: 800;
+    font-size: clamp(2.5rem, 3vw + 1rem, 3.75rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  /* Body text */
+  .t-body {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--fg-secondary);
+  }
+
+  .t-lead {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--fg-secondary);
+  }
+
+  .t-small {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--fg-tertiary);
+  }
+
+  /* Mono eyebrow — uppercase tracked label above every heading */
+  .t-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem; /* ~11px */
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+  }
+
+  /* Italic display pull-quote — closing lines like "monetize the whole journey" */
+  .t-pullquote {
+    font-family: var(--font-display, var(--font-sans));
+    font-style: italic;
+    font-size: clamp(1.25rem, 1.5vw + 0.75rem, 1.5rem);
+    line-height: 1.65;
+    color: var(--fg-secondary);
+  }
+
+  /* Placeholder spans — [TBD] / [VALUE: $XXX] tokens kept visible in dev */
+  .t-placeholder {
+    font-family: var(--font-mono);
+    color: var(--fg-placeholder);
+  }
+
+  /* Tabular figures for stat rows / tier tables */
+  .t-figure {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Gradient text — replaces the verbose `bg-X-gradient bg-clip-text text-transparent` triple */
+  .text-stack-gradient {
+    background: var(--stack-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-gold-gradient {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-edge-gradient {
+    background: var(--edge-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-earn-gradient {
+    background: var(--earn-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }

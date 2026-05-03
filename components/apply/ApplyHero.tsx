@@ -1,9 +1,6 @@
 import { PartnerSeal } from "@/components/shared/PartnerSeal";
+import { P } from "@/components/shared/Placeholder";
 import { PrismaticRibbon } from "@/components/shared/PrismaticRibbon";
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
 
 /**
  * /apply hero — full-width, prismatic ribbon at top, eyebrow + H1 with
