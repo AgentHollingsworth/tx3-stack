@@ -146,7 +146,7 @@ export default function MarketsPage() {
             <div className="mb-3 font-mono text-[11px] tracking-widest text-exec-gold uppercase">
               Direct Referrals
             </div>
-            <div className="font-display text-4xl font-extrabold text-exec-gold md:text-5xl">
+            <div className="h-stat text-exec-gold">
               $12<span className="text-2xl font-bold text-tx3-off-white/90">/lot</span>
             </div>
             <p className="mt-4 text-tx3-off-white/85">
@@ -175,7 +175,7 @@ export default function MarketsPage() {
             <div className="mb-3 t-eyebrow">
               Indirect Revenue (2-tier IB)
             </div>
-            <div className="font-display text-4xl font-extrabold text-tx3-off-white/90 md:text-5xl">
+            <div className="h-stat text-tx3-off-white/90">
               $3<span className="text-2xl font-bold text-tx3-muted">/lot</span>
             </div>
             <p className="mt-4 text-tx3-off-white/85">

@@ -124,7 +124,7 @@ function TierCard({ tier, index }: { tier: Tier; index: number }) {
         <div className="mb-1 t-eyebrow">
           Threshold
         </div>
-        <div className="font-mono text-xs text-tx3-off-white/85">
+        <div className="t-figure text-xs text-tx3-off-white/85">
           {tier.threshold}
         </div>
       </div>

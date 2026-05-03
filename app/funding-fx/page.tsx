@@ -233,7 +233,7 @@ export default function FundingFxPage() {
               <p className="mb-4 min-h-[3rem] text-sm leading-snug text-tx3-off-white/85">
                 {tier.perk}
               </p>
-              <div className="mt-auto border-t border-tx3-border pt-3 font-mono text-xs text-tx3-off-white/85">
+              <div className="mt-auto border-t border-tx3-border pt-3 t-figure text-xs text-tx3-off-white/85">
                 {tier.threshold}
               </div>
             </div>

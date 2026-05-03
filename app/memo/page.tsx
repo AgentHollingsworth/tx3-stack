@@ -184,7 +184,7 @@ export default function MemoPage() {
               <div className="mb-3 t-eyebrow">
                 Example · One Cohort
               </div>
-              <div className="space-y-2 font-mono text-sm text-tx3-off-white/85">
+              <div className="space-y-2 t-figure text-sm text-tx3-off-white/85">
                 <div className="flex items-center justify-between">
                   <span>Referrals</span>
                   <span className="tabular-nums text-tx3-white">100</span>
