@@ -1,5 +1,6 @@
 import { PillarCard, type Pillar } from "@/components/shared/PillarCard";
 import { PrismaticRibbon } from "@/components/shared/PrismaticRibbon";
+import { P } from "@/components/shared/Placeholder";
 
 type Bonus = {
   pillar: Pillar;
@@ -12,13 +13,6 @@ type Bonus = {
   /** Optional eligibility line (used by Earner's Circle). */
   eligibility?: React.ReactNode;
 };
-
-/** Reused mono-gold placeholder span — same convention as Phase 3 Grand Slam. */
-function P({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="font-mono text-tx3-gold/95">{children}</span>
-  );
-}
 
 const BONUSES: Bonus[] = [
   {
@@ -91,12 +85,12 @@ export function BonusStack() {
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="mb-16 max-w-3xl">
-          <div className="mb-3 font-mono text-xs tracking-widest text-tx3-muted uppercase">
+          <div className="mb-3 t-eyebrow">
             The Bonus Stack
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-5xl">
+          <h2 className="h-section">
             Bonuses that{" "}
-            <span className="bg-stack-gradient bg-clip-text text-transparent">
+            <span className="text-stack-gradient">
               compound
             </span>{" "}
             your earnings.
@@ -113,7 +107,7 @@ export function BonusStack() {
             >
               {/* Number + label */}
               <div className="mb-4 flex items-center gap-3">
-                <span className="font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+                <span className="t-eyebrow">
                   Bonus {bonus.number}
                 </span>
                 <span className="h-px flex-1 bg-tx3-border" />
@@ -130,7 +124,7 @@ export function BonusStack() {
               {/* Optional eligibility */}
               {bonus.eligibility && (
                 <div className="mt-5 rounded-lg border border-tx3-border bg-tx3-near-black/60 p-4">
-                  <div className="mb-1 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+                  <div className="mb-1 t-eyebrow">
                     Eligibility
                   </div>
                   <p className="text-sm text-tx3-off-white/85">
@@ -141,7 +135,7 @@ export function BonusStack() {
 
               {/* "Why" footer */}
               <div className="mt-auto border-t border-tx3-border pt-5">
-                <div className="mb-1 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+                <div className="mb-1 t-eyebrow">
                   Why
                 </div>
                 <p className="font-display text-sm italic text-tx3-off-white/80">

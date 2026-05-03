@@ -37,9 +37,9 @@ export function ApplyHero() {
         </div>
 
         {/* H1 */}
-        <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-tx3-white sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="h-hero">
           Become a{" "}
-          <span className="bg-stack-gradient bg-clip-text text-transparent">
+          <span className="text-stack-gradient">
             TX3 Stack
           </span>{" "}
           Partner

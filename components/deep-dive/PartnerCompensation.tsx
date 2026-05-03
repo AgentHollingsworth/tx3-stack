@@ -36,7 +36,7 @@ export function PartnerCompensation({ pillar, headline, children }: Props) {
           >
             Partner Compensation
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-5xl">
+          <h2 className="h-section">
             {headline}
           </h2>
           <PrismaticRibbon thickness="thin" className="mt-6 max-w-32" />

@@ -42,7 +42,7 @@ const pillarStyles: Record<Pillar, PillarStyle> = {
     hoverBorder: "hover:border-earn-green/40",
   },
   stack: {
-    text: "bg-stack-gradient bg-clip-text text-transparent",
+    text: "text-stack-gradient",
     accentBar: "bg-stack-gradient",
     glow: "hover:shadow-[0_0_40px_rgba(255,184,31,0.35)]",
     ambient:
@@ -106,7 +106,7 @@ export function PillarCard({
         {eyebrow && (
           <div
             className={cn(
-              "mb-6 font-display text-5xl font-extrabold tracking-tight uppercase md:text-6xl",
+              "mb-6 h-pillar",
               style.text,
             )}
           >

@@ -2,6 +2,7 @@
 
 import { useId, useMemo, useState } from "react";
 import { BrandLogo } from "@/components/shared/BrandLogo";
+import { P } from "@/components/shared/Placeholder";
 import { cn } from "@/lib/utils";
 
 /**
@@ -44,10 +45,6 @@ type Props = {
 
 function formatMoney(amount: number) {
   return `$${Math.round(amount).toLocaleString()}`;
-}
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
 }
 
 // --- Slider ---
@@ -103,7 +100,7 @@ function Slider({
       <div className="mb-2 flex items-baseline justify-between gap-3">
         <label
           htmlFor={id}
-          className="font-mono text-[11px] tracking-widest text-tx3-muted uppercase"
+          className="t-eyebrow"
         >
           {label}
         </label>
@@ -244,7 +241,7 @@ function OutputCard({
 
       {/* Annual */}
       <div className="mt-auto border-t border-tx3-border pt-4">
-        <div className="mb-1 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+        <div className="mb-1 t-eyebrow">
           Annual
         </div>
         <div className="font-display text-2xl font-bold tabular-nums text-tx3-off-white/90">
@@ -295,12 +292,12 @@ export function EarningsCalculator({ defaultProgram = "memo" }: Props) {
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         {/* Section heading */}
         <div className="mx-auto mb-10 max-w-3xl text-center md:mb-12">
-          <div className="mb-3 font-mono text-xs tracking-widest text-tx3-muted uppercase">
+          <div className="mb-3 t-eyebrow">
             Earnings Calculator
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-5xl">
+          <h2 className="h-section">
             See your{" "}
-            <span className="bg-stack-gradient bg-clip-text text-transparent">
+            <span className="text-stack-gradient">
               TX3 Stack earnings
             </span>
           </h2>
@@ -466,7 +463,7 @@ export function EarningsCalculator({ defaultProgram = "memo" }: Props) {
               <div className="rounded-[15px] bg-tx3-black px-6 py-6 md:px-10 md:py-8">
                 <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                   <div>
-                    <div className="font-mono text-[11px] tracking-widest text-tx3-gold uppercase">
+                    <div className="t-eyebrow text-tx3-gold">
                       Total TX3 Stack Earnings
                     </div>
                     <p className="mt-1 max-w-md text-sm text-tx3-off-white/70">
@@ -475,7 +472,7 @@ export function EarningsCalculator({ defaultProgram = "memo" }: Props) {
                   </div>
                   <div className="flex flex-col items-start gap-1 text-left md:items-end md:text-right">
                     <div className="font-display text-3xl leading-none font-extrabold tracking-tight tabular-nums md:text-4xl">
-                      <span className="bg-stack-gradient bg-clip-text text-transparent">
+                      <span className="text-stack-gradient">
                         {formatMoney(totalMonthly)}
                       </span>
                       <span className="ml-1 text-base font-medium text-tx3-muted">
@@ -483,7 +480,7 @@ export function EarningsCalculator({ defaultProgram = "memo" }: Props) {
                       </span>
                     </div>
                     <div className="font-display text-xl font-bold tabular-nums md:text-2xl">
-                      <span className="bg-stack-gradient bg-clip-text text-transparent">
+                      <span className="text-stack-gradient">
                         {formatMoney(totalAnnual)}
                       </span>
                       <span className="ml-1 text-sm font-medium text-tx3-muted">
@@ -496,7 +493,7 @@ export function EarningsCalculator({ defaultProgram = "memo" }: Props) {
             </div>
 
             {/* Footnote about TBD constants */}
-            <p className="mt-6 text-center font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+            <p className="mt-6 text-center t-eyebrow">
               Math runs on temporary constants · placeholders swap to real
               numbers at launch
             </p>

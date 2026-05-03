@@ -1,9 +1,6 @@
 import { PrismaticRibbon } from "@/components/shared/PrismaticRibbon";
+import { P } from "@/components/shared/Placeholder";
 import { cn } from "@/lib/utils";
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
 
 type Founder = {
   initials: string;
@@ -48,7 +45,7 @@ function FounderCard({ founder }: { founder: Founder }) {
       <div className="font-display text-lg font-bold text-tx3-white">
         {founder.name}
       </div>
-      <div className="mt-1 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+      <div className="mt-1 t-eyebrow">
         {founder.role}
       </div>
     </div>
@@ -69,7 +66,7 @@ export function FounderSection() {
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         {/* Heading */}
         <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-3 font-mono text-xs tracking-widest text-tx3-muted uppercase">
+          <div className="mb-3 t-eyebrow">
             Heritage
           </div>
           <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-4xl lg:text-5xl">
@@ -77,7 +74,7 @@ export function FounderSection() {
             <span className="text-tx3-off-white/90">
               Backed by a brokerage.
             </span>{" "}
-            <span className="bg-gold-gradient bg-clip-text text-transparent">
+            <span className="text-gold-gradient">
               Battle-tested by Top Tier Trader.
             </span>
           </h2>
@@ -90,7 +87,7 @@ export function FounderSection() {
         {/* Top Tier Trader heritage stats */}
         <div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-4 rounded-2xl border border-tx3-gold/25 bg-tx3-charcoal p-6 md:grid-cols-3 md:p-8">
           <div className="text-center md:border-r md:border-tx3-border md:px-4">
-            <div className="font-mono text-[10px] tracking-widest text-tx3-gold uppercase">
+            <div className="t-eyebrow text-tx3-gold">
               Funded Traders
             </div>
             <div className="mt-2 font-display text-2xl font-extrabold">
@@ -98,7 +95,7 @@ export function FounderSection() {
             </div>
           </div>
           <div className="text-center md:border-r md:border-tx3-border md:px-4">
-            <div className="font-mono text-[10px] tracking-widest text-tx3-gold uppercase">
+            <div className="t-eyebrow text-tx3-gold">
               Payouts Issued
             </div>
             <div className="mt-2 font-display text-2xl font-extrabold">
@@ -106,7 +103,7 @@ export function FounderSection() {
             </div>
           </div>
           <div className="text-center md:px-4">
-            <div className="font-mono text-[10px] tracking-widest text-tx3-gold uppercase">
+            <div className="t-eyebrow text-tx3-gold">
               Paid Out To Date
             </div>
             <div className="mt-2 font-display text-2xl font-extrabold">
@@ -126,7 +123,7 @@ export function FounderSection() {
 
         {/* Founders */}
         <div className="mx-auto mt-16 max-w-4xl">
-          <div className="mb-6 text-center font-mono text-[11px] tracking-widest text-tx3-muted uppercase">
+          <div className="mb-6 text-center t-eyebrow">
             The People
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">

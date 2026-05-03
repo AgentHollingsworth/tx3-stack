@@ -5,10 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { PrismaticRibbon } from "@/components/shared/PrismaticRibbon";
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
+import { P } from "@/components/shared/Placeholder";
 
 type QA = {
   q: string;
@@ -115,12 +112,12 @@ export function FAQ() {
     <section id="faq" className="relative bg-tx3-near-black py-24 md:py-32">
       <div className="mx-auto max-w-4xl px-6 md:px-10">
         <div className="mb-12 max-w-3xl md:mb-16">
-          <div className="mb-3 font-mono text-xs tracking-widest text-tx3-muted uppercase">
+          <div className="mb-3 t-eyebrow">
             Frequently Asked
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-5xl">
+          <h2 className="h-section">
             The questions{" "}
-            <span className="bg-gold-gradient bg-clip-text text-transparent">
+            <span className="text-gold-gradient">
               everyone asks first.
             </span>
           </h2>

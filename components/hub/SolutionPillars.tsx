@@ -77,12 +77,12 @@ export function SolutionPillars() {
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="mb-16 max-w-3xl">
-          <div className="mb-3 font-mono text-xs tracking-widest text-tx3-muted uppercase">
+          <div className="mb-3 t-eyebrow">
             The TX3 Stack
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-5xl">
+          <h2 className="h-section">
             Three brands. One audience.{" "}
-            <span className="bg-stack-gradient bg-clip-text text-transparent">
+            <span className="text-stack-gradient">
               Compounding revenue.
             </span>
           </h2>
@@ -109,7 +109,7 @@ export function SolutionPillars() {
 
               {/* What it solves */}
               <div className="mb-4">
-                <div className="mb-1 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+                <div className="mb-1 t-eyebrow">
                   For the trader
                 </div>
                 <p className="font-display text-lg font-medium text-tx3-white">
@@ -119,7 +119,7 @@ export function SolutionPillars() {
 
               {/* What it earns */}
               <div className="mt-auto pt-4">
-                <div className="mb-1 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+                <div className="mb-1 t-eyebrow">
                   For you
                 </div>
                 <p className="text-tx3-off-white/85">{p.earns}</p>
@@ -127,7 +127,7 @@ export function SolutionPillars() {
 
               {/* Footer brand label */}
               <div className="mt-6 border-t border-tx3-border pt-4">
-                <span className="font-mono text-[11px] tracking-widest text-tx3-muted uppercase">
+                <span className="t-eyebrow">
                   {p.brandLabel}
                 </span>
               </div>
@@ -135,7 +135,7 @@ export function SolutionPillars() {
           ))}
         </div>
 
-        <p className="mx-auto mt-16 max-w-3xl text-center font-display text-xl italic leading-relaxed text-tx3-off-white/80 md:text-2xl">
+        <p className="mx-auto mt-16 max-w-3xl text-center t-pullquote">
           Your audience doesn't have to choose.{" "}
           <span className="font-semibold not-italic text-tx3-white">
             They convert across the stack.

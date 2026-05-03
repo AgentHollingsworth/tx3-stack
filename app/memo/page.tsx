@@ -26,16 +26,13 @@ import { ProgramFAQ } from "@/components/deep-dive/ProgramFAQ";
 import { ProgramOverview } from "@/components/deep-dive/ProgramOverview";
 import { ToolsYouGet } from "@/components/deep-dive/ToolsYouGet";
 import { TraderSideValue } from "@/components/deep-dive/TraderSideValue";
+import { P } from "@/components/shared/Placeholder";
 
 export const metadata = {
   title: "Market Memo — Affiliate Program · TX3 Stack",
   description:
     "15% lifetime recurring SaaS commission. Sticky product. Compounding payouts.",
 };
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
 
 export default function MemoPage() {
   return (
@@ -49,7 +46,7 @@ export default function MemoPage() {
         headline={
           <>
             Recurring revenue from a tool every trader{" "}
-            <span className="bg-edge-gradient bg-clip-text text-transparent">
+            <span className="text-edge-gradient">
               actually uses.
             </span>
           </>
@@ -159,7 +156,7 @@ export default function MemoPage() {
                 The Compounding Math
               </div>
               <div className="font-display text-6xl font-extrabold leading-none tracking-tight md:text-7xl">
-                <span className="bg-edge-gradient bg-clip-text text-transparent">
+                <span className="text-edge-gradient">
                   15%
                 </span>
               </div>
@@ -176,7 +173,7 @@ export default function MemoPage() {
                   className="size-3.5 text-edge-teal"
                   strokeWidth={2.5}
                 />
-                <span className="font-mono text-[10px] tracking-widest text-tx3-off-white/80 uppercase">
+                <span className="t-eyebrow text-tx3-off-white/80">
                   Lifetime · monthly payouts
                 </span>
               </div>
@@ -184,7 +181,7 @@ export default function MemoPage() {
 
             {/* Math example */}
             <div className="rounded-xl border border-tx3-border bg-tx3-near-black/80 p-6">
-              <div className="mb-3 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+              <div className="mb-3 t-eyebrow">
                 Example · One Cohort
               </div>
               <div className="space-y-2 font-mono text-sm text-tx3-off-white/85">
@@ -330,7 +327,7 @@ export default function MemoPage() {
         headline={
           <>
             Ready to build{" "}
-            <span className="bg-edge-gradient bg-clip-text text-transparent">
+            <span className="text-edge-gradient">
               recurring revenue?
             </span>
           </>

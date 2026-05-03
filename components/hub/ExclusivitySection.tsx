@@ -1,10 +1,7 @@
 import { Eye, MessagesSquare, Trophy } from "lucide-react";
 import { PartnerSeal } from "@/components/shared/PartnerSeal";
 import { PrismaticRibbon } from "@/components/shared/PrismaticRibbon";
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
+import { P } from "@/components/shared/Placeholder";
 
 type SmallTile = {
   icon: React.ReactNode;
@@ -58,12 +55,12 @@ export function ExclusivitySection() {
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="mb-16 max-w-3xl">
-          <div className="mb-3 font-mono text-xs tracking-widest text-tx3-muted uppercase">
+          <div className="mb-3 t-eyebrow">
             Status & Exclusivity
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-5xl">
+          <h2 className="h-section">
             This isn't a generic{" "}
-            <span className="bg-gold-gradient bg-clip-text text-transparent">
+            <span className="text-gold-gradient">
               affiliate program.
             </span>
           </h2>
@@ -81,7 +78,7 @@ export function ExclusivitySection() {
               <PartnerSeal variant="gold" size="xl" glow />
             </div>
             <div>
-              <div className="mb-2 font-mono text-[11px] tracking-widest text-tx3-gold uppercase">
+              <div className="mb-2 t-eyebrow text-tx3-gold">
                 The Official Partner Seal
               </div>
               <h3 className="mb-4 font-display text-2xl font-bold leading-tight text-tx3-white md:text-3xl">
@@ -94,7 +91,7 @@ export function ExclusivitySection() {
               </p>
               <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-tx3-border bg-tx3-near-black px-3 py-1">
                 <span className="size-1.5 rounded-full bg-tx3-gold shadow-[0_0_10px_rgba(255,184,31,0.8)]" />
-                <span className="font-mono text-[10px] tracking-widest text-tx3-off-white/80 uppercase">
+                <span className="t-eyebrow text-tx3-off-white/80">
                   Recognition is the reward
                 </span>
               </div>

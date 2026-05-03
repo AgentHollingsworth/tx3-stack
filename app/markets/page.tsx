@@ -21,16 +21,13 @@ import { ProgramFAQ } from "@/components/deep-dive/ProgramFAQ";
 import { ProgramOverview } from "@/components/deep-dive/ProgramOverview";
 import { ToolsYouGet } from "@/components/deep-dive/ToolsYouGet";
 import { TraderSideValue } from "@/components/deep-dive/TraderSideValue";
+import { P } from "@/components/shared/Placeholder";
 
 export const metadata = {
   title: "TX3 Markets — Affiliate Program · TX3 Stack",
   description:
     "$12/lot direct + $3/lot indirect commission. The only multi-tier IB structure in the stack.",
 };
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
 
 export default function MarketsPage() {
   return (
@@ -44,7 +41,7 @@ export default function MarketsPage() {
         headline={
           <>
             The brokerage that pays you{" "}
-            <span className="bg-gold-gradient bg-clip-text text-transparent">
+            <span className="text-gold-gradient">
               twice
             </span>{" "}
             on every trade your audience makes.
@@ -160,7 +157,7 @@ export default function MarketsPage() {
               — settled monthly, paid like clockwork.
             </p>
             <div className="mt-5 rounded-lg border border-tx3-border bg-tx3-near-black/60 p-4">
-              <div className="mb-1 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+              <div className="mb-1 t-eyebrow">
                 Example
               </div>
               <p className="text-sm text-tx3-off-white/85">
@@ -175,7 +172,7 @@ export default function MarketsPage() {
 
           {/* Indirect */}
           <div className="rounded-2xl border border-tx3-border bg-tx3-charcoal p-8">
-            <div className="mb-3 font-mono text-[11px] tracking-widest text-tx3-muted uppercase">
+            <div className="mb-3 t-eyebrow">
               Indirect Revenue (2-tier IB)
             </div>
             <div className="font-display text-4xl font-extrabold text-tx3-off-white/90 md:text-5xl">
@@ -189,7 +186,7 @@ export default function MarketsPage() {
               . The only stack with a real 2-tier IB tree.
             </p>
             <div className="mt-5 rounded-lg border border-tx3-border bg-tx3-near-black/60 p-4">
-              <div className="mb-1 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+              <div className="mb-1 t-eyebrow">
                 Example
               </div>
               <p className="text-sm text-tx3-off-white/85">
@@ -240,7 +237,7 @@ export default function MarketsPage() {
                 key={t.tier}
                 className="rounded-xl border border-tx3-border bg-tx3-charcoal p-5"
               >
-                <div className="mb-2 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+                <div className="mb-2 t-eyebrow">
                   {String(i + 1).padStart(2, "0")} · {t.tier}
                 </div>
                 <div className="font-display text-2xl font-extrabold text-exec-gold">
@@ -354,7 +351,7 @@ export default function MarketsPage() {
         headline={
           <>
             Ready to monetize{" "}
-            <span className="bg-gold-gradient bg-clip-text text-transparent">
+            <span className="text-gold-gradient">
               every trade?
             </span>
           </>

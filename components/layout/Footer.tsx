@@ -59,7 +59,7 @@ export function Footer() {
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
             {LINK_GROUPS.map((group) => (
               <div key={group.heading}>
-                <div className="mb-4 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+                <div className="mb-4 t-eyebrow">
                   {group.heading}
                 </div>
                 <ul className="space-y-2.5">
@@ -81,7 +81,7 @@ export function Footer() {
 
         {/* Brand row — Memo · Markets · Funding (white variants) */}
         <div className="mt-16 border-t border-tx3-border pt-10">
-          <div className="mb-6 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+          <div className="mb-6 t-eyebrow">
             The Stack
           </div>
           <div className="flex flex-wrap items-center gap-x-12 gap-y-6 opacity-70">
@@ -98,7 +98,7 @@ export function Footer() {
 
         {/* Risk disclaimer + copyright */}
         <div className="mt-12 border-t border-tx3-border pt-8">
-          <div className="mb-2 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+          <div className="mb-2 t-eyebrow">
             Risk Disclosure
           </div>
           <p className="max-w-4xl text-xs leading-relaxed text-tx3-muted">

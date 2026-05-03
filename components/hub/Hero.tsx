@@ -26,21 +26,21 @@ export function Hero() {
         {/* Eyebrow */}
         <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-tx3-border bg-tx3-charcoal/60 px-4 py-1.5 backdrop-blur-sm">
           <span className="size-1.5 rounded-full bg-exec-gold shadow-[0_0_12px_rgba(255,184,31,0.8)]" />
-          <span className="font-mono text-[11px] tracking-widest text-tx3-off-white/80 uppercase">
+          <span className="t-eyebrow text-tx3-off-white/80">
             TX3 Stack · Edge. Execution. Earn.
           </span>
         </div>
 
         {/* H1 */}
-        <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-tx3-white sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="h-hero">
           The Only Affiliate Stack in Trading
           <br className="hidden sm:block" />{" "}
           That Pays You{" "}
-          <span className="bg-stack-gradient bg-clip-text text-transparent">
+          <span className="text-stack-gradient">
             Three Ways
           </span>{" "}
           From{" "}
-          <span className="bg-gold-gradient bg-clip-text text-transparent">
+          <span className="text-gold-gradient">
             One Audience.
           </span>
         </h1>

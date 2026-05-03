@@ -28,13 +28,13 @@ export function FinalCTA() {
       </div>
 
       <div className="mx-auto flex max-w-4xl flex-col items-center px-6 py-12 text-center md:px-10 md:py-16">
-        <div className="mb-4 font-mono text-xs tracking-widest text-tx3-muted uppercase">
+        <div className="mb-4 t-eyebrow">
           Apply Now
         </div>
         <h2 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-tx3-white md:text-6xl lg:text-7xl">
           Three brands.{" "}
           <span className="text-tx3-off-white/90">One audience.</span>{" "}
-          <span className="bg-stack-gradient bg-clip-text text-transparent">
+          <span className="text-stack-gradient">
             Compounding revenue.
           </span>
         </h2>
@@ -51,7 +51,7 @@ export function FinalCTA() {
           </CTAButton>
         </div>
 
-        <p className="mt-6 font-mono text-[11px] tracking-widest text-tx3-muted uppercase">
+        <p className="mt-6 t-eyebrow">
           Approval in 1–3 business days · No exclusivity required
         </p>
       </div>

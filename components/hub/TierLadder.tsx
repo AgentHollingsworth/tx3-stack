@@ -61,8 +61,8 @@ const TIERS: Tier[] = [
     commission: "20%",
     perk: "5 free $100K challenges · private circle · co-marketing · retreats",
     threshold: "~500 referrals",
-    accentText: "bg-stack-gradient bg-clip-text text-transparent",
-    numberText: "bg-stack-gradient bg-clip-text text-transparent",
+    accentText: "text-stack-gradient",
+    numberText: "text-stack-gradient",
     bar: "bg-stack-gradient",
     badge: "Invite only",
     isElite: true,
@@ -83,7 +83,7 @@ function TierCard({ tier, index }: { tier: Tier; index: number }) {
       <div className={cn("absolute inset-x-0 top-0 h-1", tier.bar)} />
 
       {/* Step number */}
-      <div className="mb-4 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+      <div className="mb-4 t-eyebrow">
         Tier {String(index + 1).padStart(2, "0")}
       </div>
 
@@ -121,7 +121,7 @@ function TierCard({ tier, index }: { tier: Tier; index: number }) {
 
       {/* Threshold */}
       <div className="mt-auto border-t border-tx3-border pt-3">
-        <div className="mb-1 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+        <div className="mb-1 t-eyebrow">
           Threshold
         </div>
         <div className="font-mono text-xs text-tx3-off-white/85">
@@ -145,12 +145,12 @@ export function TierLadder() {
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="mb-12 max-w-3xl md:mb-16">
-          <div className="mb-3 font-mono text-xs tracking-widest text-tx3-muted uppercase">
+          <div className="mb-3 t-eyebrow">
             The Aspiration Engine · TX3 Funding FX
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-5xl">
+          <h2 className="h-section">
             How far can you{" "}
-            <span className="bg-earn-gradient bg-clip-text text-transparent">
+            <span className="text-earn-gradient">
               climb?
             </span>
           </h2>

@@ -61,7 +61,7 @@ export function SocialProofSidebar() {
 
       {/* Stats card */}
       <div className="rounded-2xl border border-tx3-gold/25 bg-tx3-charcoal p-6">
-        <div className="mb-4 font-mono text-[10px] tracking-widest text-tx3-gold uppercase">
+        <div className="mb-4 t-eyebrow text-tx3-gold">
           By the Numbers
         </div>
         <ul className="space-y-4">
@@ -94,7 +94,7 @@ export function SocialProofSidebar() {
 
       {/* Testimonial */}
       <div className="rounded-2xl border border-tx3-border bg-tx3-charcoal p-6">
-        <div className="mb-3 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+        <div className="mb-3 t-eyebrow">
           From The Stack
         </div>
         <blockquote className="font-display text-base leading-relaxed text-tx3-off-white/90 italic">
@@ -108,7 +108,7 @@ export function SocialProofSidebar() {
             <div className="font-display text-sm font-semibold text-tx3-white">
               <P>[PLACEHOLDER: Partner Name TBD]</P>
             </div>
-            <div className="font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+            <div className="t-eyebrow">
               <P>[PLACEHOLDER: Audience]</P> ·{" "}
               <P>[PLACEHOLDER: Platform]</P>
             </div>
@@ -118,7 +118,7 @@ export function SocialProofSidebar() {
 
       {/* Timeline */}
       <div className="rounded-2xl border border-tx3-border bg-tx3-charcoal p-6">
-        <div className="mb-5 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+        <div className="mb-5 t-eyebrow">
           What Happens Next
         </div>
         <ol className="space-y-4">

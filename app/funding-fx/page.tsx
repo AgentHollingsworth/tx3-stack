@@ -23,6 +23,7 @@ import { ProgramFAQ } from "@/components/deep-dive/ProgramFAQ";
 import { ProgramOverview } from "@/components/deep-dive/ProgramOverview";
 import { ToolsYouGet } from "@/components/deep-dive/ToolsYouGet";
 import { TraderSideValue } from "@/components/deep-dive/TraderSideValue";
+import { P } from "@/components/shared/Placeholder";
 import { cn } from "@/lib/utils";
 
 export const metadata = {
@@ -30,10 +31,6 @@ export const metadata = {
   description:
     "5-tier commission ladder, up to 20% on every challenge sold, plus profit share on funded traders.",
 };
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
 
 const FX_TIERS = [
   {
@@ -73,7 +70,7 @@ const FX_TIERS = [
     commission: "20%",
     perk: "5 free $100Ks · private circle · co-marketing · retreats",
     threshold: "~500 referrals (invite only)",
-    accent: "bg-stack-gradient bg-clip-text text-transparent",
+    accent: "text-stack-gradient",
     bar: "bg-stack-gradient",
     isElite: true,
   },
@@ -91,7 +88,7 @@ export default function FundingFxPage() {
         headline={
           <>
             Get paid every time someone takes a{" "}
-            <span className="bg-earn-gradient bg-clip-text text-transparent">
+            <span className="text-earn-gradient">
               TX3 Funding challenge.
             </span>
           </>
@@ -207,7 +204,7 @@ export default function FundingFxPage() {
               <div
                 className={cn("absolute inset-x-0 top-0 h-1", tier.bar)}
               />
-              <div className="mb-4 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+              <div className="mb-4 t-eyebrow">
                 Tier {String(i + 1).padStart(2, "0")}
               </div>
               <div className="mb-1 flex items-center justify-between gap-2">
@@ -351,7 +348,7 @@ export default function FundingFxPage() {
         headline={
           <>
             Ready to monetize{" "}
-            <span className="bg-earn-gradient bg-clip-text text-transparent">
+            <span className="text-earn-gradient">
               trader ambition?
             </span>
           </>

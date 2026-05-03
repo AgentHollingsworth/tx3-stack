@@ -39,7 +39,7 @@ export function ProgramOverview({ pillar, headline, body, stats }: Props) {
           >
             Program Overview
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-5xl">
+          <h2 className="h-section">
             {headline}
           </h2>
           <PrismaticRibbon thickness="thin" className="mt-6 max-w-32" />
@@ -57,7 +57,7 @@ export function ProgramOverview({ pillar, headline, body, stats }: Props) {
               key={i}
               className="rounded-2xl border border-tx3-border bg-tx3-charcoal p-6"
             >
-              <div className="mb-2 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+              <div className="mb-2 t-eyebrow">
                 {stat.label}
               </div>
               <div className="font-display text-xl font-bold text-tx3-white md:text-2xl">

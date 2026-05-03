@@ -23,6 +23,7 @@ import { ProgramFAQ } from "@/components/deep-dive/ProgramFAQ";
 import { ProgramOverview } from "@/components/deep-dive/ProgramOverview";
 import { ToolsYouGet } from "@/components/deep-dive/ToolsYouGet";
 import { TraderSideValue } from "@/components/deep-dive/TraderSideValue";
+import { P } from "@/components/shared/Placeholder";
 import { cn } from "@/lib/utils";
 
 export const metadata = {
@@ -30,10 +31,6 @@ export const metadata = {
   description:
     "10–15% commission on every futures challenge. Powered by Topstep. Massive untapped audience.",
 };
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
 
 const FUTURES_TIERS = [
   {
@@ -57,7 +54,7 @@ const FUTURES_TIERS = [
     commission: "15%",
     perk: "15% discount link · custom coupon codes",
     threshold: "Eligible for advanced tools",
-    accent: "bg-earn-gradient bg-clip-text text-transparent",
+    accent: "text-earn-gradient",
     bar: "bg-earn-gradient",
     isTop: true,
   },
@@ -75,7 +72,7 @@ export default function FundingFuturesPage() {
         headline={
           <>
             Earn on every futures challenge —{" "}
-            <span className="bg-earn-gradient bg-clip-text text-transparent">
+            <span className="text-earn-gradient">
               powered by Topstep.
             </span>
           </>
@@ -204,7 +201,7 @@ export default function FundingFuturesPage() {
               <div
                 className={cn("absolute inset-x-0 top-0 h-1", tier.bar)}
               />
-              <div className="mb-4 font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+              <div className="mb-4 t-eyebrow">
                 {String(i + 1).padStart(2, "0")} · {tier.name}
               </div>
               <h3
@@ -366,7 +363,7 @@ export default function FundingFuturesPage() {
         headline={
           <>
             Ready to claim the{" "}
-            <span className="bg-earn-gradient bg-clip-text text-transparent">
+            <span className="text-earn-gradient">
               futures audience?
             </span>
           </>

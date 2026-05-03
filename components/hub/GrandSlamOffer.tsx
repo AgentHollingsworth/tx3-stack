@@ -209,7 +209,7 @@ function OfferRow({ item }: { item: OfferItem }) {
       </span>
 
       <div className="text-sm leading-relaxed text-tx3-off-white/90 md:text-base">
-        <div className="mb-1 font-mono text-[10px] tracking-widest text-tx3-muted uppercase md:hidden">
+        <div className="mb-1 t-eyebrow md:hidden">
           {pillarLabel[item.pillar]}
         </div>
         {item.label}
@@ -232,7 +232,7 @@ function OfferRow({ item }: { item: OfferItem }) {
 function GroupHeader({ children }: { children: React.ReactNode }) {
   return (
     <div className="mt-2 mb-1 flex items-center gap-3">
-      <span className="font-mono text-[11px] tracking-widest text-tx3-muted uppercase">
+      <span className="t-eyebrow">
         {children}
       </span>
       <span className="h-px flex-1 bg-tx3-border" />
@@ -254,12 +254,12 @@ export function GrandSlamOffer() {
       <div className="mx-auto max-w-5xl px-6 md:px-10">
         {/* Section heading */}
         <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
-          <div className="mb-3 font-mono text-xs tracking-widest text-tx3-muted uppercase">
+          <div className="mb-3 t-eyebrow">
             The Grand Slam Offer
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-5xl">
+          <h2 className="h-section">
             What you get as a{" "}
-            <span className="bg-gold-gradient bg-clip-text text-transparent">
+            <span className="text-gold-gradient">
               TX3 Stack Partner.
             </span>
           </h2>
@@ -311,18 +311,18 @@ export function GrandSlamOffer() {
 
             {/* Total stated value */}
             <div className="mt-10 rounded-xl border border-tx3-gold/30 bg-tx3-gold/5 p-6 text-center md:p-8">
-              <div className="mb-2 font-mono text-[11px] tracking-widest text-tx3-gold uppercase">
+              <div className="mb-2 t-eyebrow text-tx3-gold">
                 Total Stated Value
               </div>
               <p className="font-display text-base text-tx3-off-white/85 md:text-lg">
                 If maxed across all four programs:
               </p>
               <p className="mt-3 font-display text-3xl font-extrabold leading-tight md:text-5xl">
-                <span className="bg-gold-gradient bg-clip-text text-transparent">
+                <span className="text-gold-gradient">
                   [$XXX,XXX+ /year — TBD]
                 </span>
               </p>
-              <p className="mx-auto mt-3 max-w-md font-mono text-[10px] tracking-widest text-tx3-muted uppercase">
+              <p className="mx-auto mt-3 max-w-md t-eyebrow">
                 Placeholder · finalize before launch
               </p>
             </div>
@@ -332,7 +332,7 @@ export function GrandSlamOffer() {
               <CTAButton variant="primary" size="xl" href="/apply">
                 Apply to Become a TX3 Stack Partner →
               </CTAButton>
-              <p className="font-mono text-[11px] tracking-widest text-tx3-muted uppercase">
+              <p className="t-eyebrow">
                 Approval in 1–3 business days
               </p>
             </div>

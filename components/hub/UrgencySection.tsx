@@ -1,10 +1,7 @@
 import { Award, Sparkles, TrendingUp } from "lucide-react";
 import { CTAButton } from "@/components/shared/CTAButton";
 import { PrismaticRibbon } from "@/components/shared/PrismaticRibbon";
-
-function P({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-tx3-gold/95">{children}</span>;
-}
+import { P } from "@/components/shared/Placeholder";
 
 const PERKS = [
   {
@@ -60,13 +57,13 @@ export function UrgencySection() {
             {/* Eyebrow + heading */}
             <div className="mb-3 flex items-center gap-3">
               <span className="size-2 rounded-full bg-tx3-gold shadow-[0_0_12px_rgba(255,184,31,0.8)]" />
-              <span className="font-mono text-xs tracking-widest text-tx3-gold uppercase">
+              <span className="t-eyebrow text-tx3-gold">
                 Founding Partner Cohort · Limited Window
               </span>
             </div>
             <h2 className="font-display text-2xl font-bold leading-tight text-tx3-white md:text-4xl">
               Founding TX3 Stack Partners get{" "}
-              <span className="bg-gold-gradient bg-clip-text text-transparent">
+              <span className="text-gold-gradient">
                 locked-in benefits.
               </span>
             </h2>

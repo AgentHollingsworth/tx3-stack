@@ -100,7 +100,7 @@ function Field({
     <div>
       <label
         htmlFor={htmlFor}
-        className="mb-1.5 flex items-center gap-1.5 font-mono text-[10px] tracking-widest text-tx3-muted uppercase"
+        className="mb-1.5 flex items-center gap-1.5 t-eyebrow"
       >
         {label}
         {required && <span className="text-tx3-gold">*</span>}
@@ -200,7 +200,7 @@ function StepHeader({ step, title }: { step: 1 | 2 | 3; title: string }) {
   return (
     <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
       <div>
-        <div className="mb-1 font-mono text-[10px] tracking-widest text-tx3-gold uppercase">
+        <div className="mb-1 t-eyebrow text-tx3-gold">
           Step {step} of 3
         </div>
         <h2 className="font-display text-2xl font-bold text-tx3-white md:text-3xl">
@@ -504,7 +504,7 @@ function Step2({
         <div className="rounded-[11px] bg-tx3-charcoal px-5 py-4">
           <div className="flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
             <div>
-              <div className="font-mono text-[10px] tracking-widest text-tx3-gold uppercase">
+              <div className="t-eyebrow text-tx3-gold">
                 Smart move
               </div>
               <p className="mt-1 text-sm text-tx3-off-white/90 md:text-base">
@@ -523,7 +523,7 @@ function Step2({
                   allSelected ? [] : PROGRAM_OPTIONS.map((p) => p.key),
                 )
               }
-              className="inline-flex shrink-0 items-center gap-2 rounded-md border border-tx3-gold/40 bg-tx3-gold/10 px-4 py-2 font-mono text-[11px] tracking-widest text-tx3-gold uppercase transition-colors hover:bg-tx3-gold/20"
+              className="inline-flex shrink-0 items-center gap-2 rounded-md border border-tx3-gold/40 bg-tx3-gold/10 px-4 py-2 t-eyebrow text-tx3-gold transition-colors hover:bg-tx3-gold/20"
             >
               {allSelected ? "Clear all" : "Select all programs"}
             </button>

@@ -52,7 +52,7 @@ export function DeepDiveFinalCTA({ pillar, headline, subhead, cta }: Props) {
             {cta.label}
           </CTAButton>
         </div>
-        <p className="mt-6 font-mono text-[11px] tracking-widest text-tx3-muted uppercase">
+        <p className="mt-6 t-eyebrow">
           Approval in 1–3 business days · No exclusivity required
         </p>
       </div>

@@ -59,7 +59,7 @@ export function SuccessState() {
 
       <h2 className="font-display text-3xl font-extrabold tracking-tight text-tx3-white md:text-4xl">
         Application{" "}
-        <span className="bg-gold-gradient bg-clip-text text-transparent">
+        <span className="text-gold-gradient">
           received.
         </span>
       </h2>
@@ -77,7 +77,7 @@ export function SuccessState() {
             key={step.n}
             className="rounded-xl border border-tx3-border bg-tx3-near-black p-4"
           >
-            <div className="mb-2 font-mono text-[10px] tracking-widest text-tx3-gold uppercase">
+            <div className="mb-2 t-eyebrow text-tx3-gold">
               {step.n}
             </div>
             <div className="font-display text-sm font-semibold text-tx3-white">
@@ -95,7 +95,7 @@ export function SuccessState() {
         <CTAButton variant="primary" size="lg" href="/">
           Back to TX3 Stack Home →
         </CTAButton>
-        <p className="font-mono text-[11px] tracking-widest text-tx3-muted uppercase">
+        <p className="t-eyebrow">
           Have questions? Email <P>[PARTNER EMAIL: TBD]</P>
         </p>
       </div>

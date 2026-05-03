@@ -249,13 +249,13 @@ export function ProgramCards() {
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="mb-16 max-w-3xl">
-          <div className="mb-3 font-mono text-xs tracking-widest text-tx3-muted uppercase">
+          <div className="mb-3 t-eyebrow">
             The Programs
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-5xl">
+          <h2 className="h-section">
             Four programs.{" "}
             <span className="text-tx3-off-white/85">Pick one.</span>{" "}
-            <span className="bg-stack-gradient bg-clip-text text-transparent">
+            <span className="text-stack-gradient">
               Run all four.
             </span>
           </h2>
