@@ -57,7 +57,7 @@ export function SuccessState() {
         </motion.div>
       </div>
 
-      <h2 className="font-display text-3xl font-extrabold tracking-tight text-tx3-white md:text-4xl">
+      <h2 className="h-section">
         Application{" "}
         <span className="text-gold-gradient">
           received.

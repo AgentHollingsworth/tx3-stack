@@ -118,7 +118,7 @@ export function CrossLinkPrograms({ currentProgram }: Props) {
           <div className="mb-3 t-eyebrow text-tx3-gold">
             TX3 Stack
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-4xl">
+          <h2 className="h-section">
             One audience. Three brands.{" "}
             <span className="text-stack-gradient">
               Compounding revenue.

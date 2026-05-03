@@ -69,7 +69,7 @@ export function FounderSection() {
           <div className="mb-3 t-eyebrow">
             Heritage
           </div>
-          <h2 className="font-display text-3xl font-bold leading-tight text-tx3-white md:text-4xl lg:text-5xl">
+          <h2 className="h-section">
             Built by traders.{" "}
             <span className="text-tx3-off-white/90">
               Backed by a brokerage.

@@ -31,7 +31,7 @@ export function FinalCTA() {
         <div className="mb-4 t-eyebrow">
           Apply Now
         </div>
-        <h2 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-tx3-white md:text-6xl lg:text-7xl">
+        <h2 className="h-hero">
           Three brands.{" "}
           <span className="text-tx3-off-white/90">One audience.</span>{" "}
           <span className="text-stack-gradient">

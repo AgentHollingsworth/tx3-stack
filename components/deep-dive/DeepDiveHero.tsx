@@ -115,7 +115,7 @@ export function DeepDiveHero({
         </div>
 
         {/* H1 */}
-        <h1 className="font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-tx3-white sm:text-4xl md:text-5xl lg:text-6xl">
+        <h1 className="h-hero">
           {headline}
         </h1>
 

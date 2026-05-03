@@ -41,7 +41,7 @@ export function DeepDiveFinalCTA({ pillar, headline, subhead, cta }: Props) {
       </div>
 
       <div className="mx-auto flex max-w-4xl flex-col items-center px-6 py-12 text-center md:px-10 md:py-16">
-        <h2 className="font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-tx3-white md:text-5xl lg:text-6xl">
+        <h2 className="h-hero">
           {headline}
         </h2>
         <p className="mt-6 max-w-2xl text-lg text-tx3-off-white/80 md:text-xl">
