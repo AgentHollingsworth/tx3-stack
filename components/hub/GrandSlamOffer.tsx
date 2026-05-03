@@ -218,9 +218,7 @@ function OfferRow({ item }: { item: OfferItem }) {
       <div
         className={cn(
           "col-start-2 text-sm md:col-start-3 md:text-right",
-          item.isPlaceholder
-            ? "font-mono text-tx3-gold/90"
-            : "text-tx3-muted",
+          item.isPlaceholder ? "t-placeholder" : "text-tx3-muted",
         )}
       >
         {item.value}
