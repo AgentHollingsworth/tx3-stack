@@ -138,14 +138,14 @@ export function FAQ() {
               <AccordionTrigger className="px-4 py-5 font-display text-base font-semibold text-tx3-white hover:no-underline md:text-lg [&_svg]:!text-tx3-muted">
                 {faq.q}
               </AccordionTrigger>
-              <AccordionContent className="px-4 pb-5 text-sm leading-relaxed text-tx3-off-white/80 md:text-base">
+              <AccordionContent className="px-4 pb-5 t-body">
                 {faq.a}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
 
-        <p className="mt-8 text-center text-sm text-tx3-muted">
+        <p className="mt-8 text-center t-small">
           Have something else?{" "}
           <a
             href="/apply"
