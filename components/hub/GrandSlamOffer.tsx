@@ -302,7 +302,7 @@ export function GrandSlamOffer() {
             {/* Partner seal flourish */}
             <div className="mt-10 flex flex-col items-center gap-4 border-t border-tx3-border pt-10 text-center">
               <PartnerSeal variant="gold" size="md" glow />
-              <p className="max-w-md font-display text-base text-tx3-off-white/80 italic md:text-lg">
+              <p className="max-w-md t-pullquote text-tx3-off-white/85">
                 And the visible proof of all of it — the Official Partner Seal.
               </p>
             </div>
@@ -312,10 +312,10 @@ export function GrandSlamOffer() {
               <div className="mb-2 t-eyebrow text-tx3-gold">
                 Total Stated Value
               </div>
-              <p className="font-display text-base text-tx3-off-white/85 md:text-lg">
+              <p className="t-lead">
                 If maxed across all four programs:
               </p>
-              <p className="mt-3 font-display text-3xl font-extrabold leading-tight md:text-5xl">
+              <p className="mt-3 h-stat">
                 <span className="text-gold-gradient">
                   [$XXX,XXX+ /year — TBD]
                 </span>
