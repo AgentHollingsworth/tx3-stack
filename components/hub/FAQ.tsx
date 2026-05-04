@@ -50,10 +50,9 @@ const FAQS: QA[] = [
     q: "Can I use paid ads?",
     a: (
       <>
-        Yes — paid traffic is allowed across all four programs, with the
-        standard rule that you can't bid on TX3-branded keywords (TX3 Markets,
-        TX3 Funding, Market Memo, Top Tier Trader, etc.). Full creative pack
-        and approved-language guide ship in the partner portal.
+        Yes — with one rule: no bidding on TX3-branded keywords (TX3 Markets,
+        TX3 Funding, Market Memo, Top Tier Trader). Full creative pack and
+        approved-language guide ship in the partner portal.
       </>
     ),
   },
@@ -70,12 +69,22 @@ const FAQS: QA[] = [
     ),
   },
   {
+    q: "What if my audience is small?",
+    a: (
+      <>
+        We don't grade on size, we grade on signal. A 2,000-follower channel
+        that converts beats 200,000 dead followers every time. Apply with a
+        real audience and a real plan — that's the bar.
+      </>
+    ),
+  },
+  {
     q: "How long does approval take?",
     a: (
       <>
         1–3 business days. Apply with a real audience and a real plan and
-        you're approved within that window. The same standard the Market Memo
-        affiliate program already runs on.
+        you're approved within that window. Every application gets a human
+        read — no automated queue.
       </>
     ),
   },
@@ -153,7 +162,7 @@ export function FAQ() {
           >
             Apply
           </a>{" "}
-          and ask the team direct.
+          and ask the team directly.
         </p>
       </div>
     </section>
