@@ -20,15 +20,19 @@ const LINK_GROUPS: LinkGroup[] = [
   {
     heading: "Partners",
     links: [
-      { label: "Hub", href: "/" },
       { label: "Apply", href: "/apply" },
+      { label: "FAQ", href: "/#faq" },
+      { label: "Tier ladder", href: "/#tiers" },
+      { label: "Partner support", href: "/apply" },
     ],
   },
   {
-    heading: "Legal",
+    heading: "Company",
     links: [
-      { label: "Privacy", href: "/privacy" },
-      { label: "Terms", href: "/terms" },
+      { label: "About", href: "/" },
+      { label: "Heritage · Top Tier Trader", href: "/funding-fx" },
+      { label: "Press", href: "/" },
+      { label: "Contact", href: "/apply" },
     ],
   },
 ];
@@ -46,12 +50,9 @@ export function Footer() {
             <Link href="/" aria-label="TX3 Stack home" className="inline-block">
               <BrandLogo brand="stack" variant="light" width={160} />
             </Link>
-            <p className="mt-4 font-display text-base text-tx3-off-white/85 italic">
-              Edge. Execution. Earn.
-            </p>
-            <p className="mt-3 max-w-sm text-sm text-tx3-muted">
-              The only affiliate stack in trading that pays you three ways from
-              one audience.
+            <p className="mt-4 max-w-sm text-sm text-tx3-muted">
+              The elite affiliate program for the trading industry. One
+              audience, three brands, four programs.
             </p>
           </div>
 
@@ -79,29 +80,12 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Brand row — Memo · Markets · Funding (white variants) */}
-        <div className="mt-16 border-t border-tx3-border pt-10">
-          <div className="mb-6 t-eyebrow">
-            The Stack
-          </div>
-          <div className="flex flex-wrap items-center gap-x-12 gap-y-6 opacity-70">
-            <BrandLogo brand="memo" variant="color" orientation="horizontal" width={140} />
-            <BrandLogo brand="markets" variant="light" width={70} />
-            <BrandLogo
-              brand="funding"
-              variant="light"
-              orientation="horizontal"
-              width={140}
-            />
-          </div>
-        </div>
-
-        {/* Risk disclaimer + copyright */}
-        <div className="mt-12 border-t border-tx3-border pt-8">
-          <div className="mb-2 t-eyebrow">
+        {/* Risk disclaimer (collapsed-summary inline) */}
+        <details className="mt-12 border-t border-tx3-border pt-8 text-tx3-muted">
+          <summary className="cursor-pointer t-eyebrow text-tx3-muted hover:text-tx3-off-white">
             Risk Disclosure
-          </div>
-          <p className="max-w-4xl text-xs leading-relaxed text-tx3-muted">
+          </summary>
+          <p className="mt-3 max-w-4xl text-xs leading-relaxed text-tx3-muted">
             Trading foreign exchange, futures, and other leveraged products
             involves substantial risk of loss and is not suitable for every
             investor. The valuation of any instrument may fluctuate, and as a
@@ -112,13 +96,27 @@ export function Footer() {
             program advertises trading-related products and services; nothing
             on this site constitutes investment advice.
           </p>
-          <div className="mt-6 flex flex-col items-start justify-between gap-2 text-xs text-tx3-muted sm:flex-row sm:items-center">
-            <div>
-              © {new Date().getFullYear()} TX3 Stack. All rights reserved.
-            </div>
-            <div className="font-mono text-[10px] tracking-widest uppercase">
-              Edge. Execution. Earn.
-            </div>
+        </details>
+
+        {/* Bottom row — brand logos + copyright (matches the design system mockup) */}
+        <div className="mt-10 flex flex-col items-start justify-between gap-6 border-t border-tx3-border pt-8 sm:flex-row sm:items-center">
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 opacity-60">
+            <BrandLogo
+              brand="memo"
+              variant="color"
+              orientation="horizontal"
+              width={110}
+            />
+            <BrandLogo brand="markets" variant="color" width={50} />
+            <BrandLogo
+              brand="funding"
+              variant="color"
+              orientation="horizontal"
+              width={110}
+            />
+          </div>
+          <div className="t-eyebrow">
+            © {new Date().getFullYear()} TX3 Group · All rights reserved
           </div>
         </div>
       </div>

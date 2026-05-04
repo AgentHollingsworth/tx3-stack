@@ -11,6 +11,7 @@ import { RiskReversal } from "@/components/hub/RiskReversal";
 import { SolutionPillars } from "@/components/hub/SolutionPillars";
 import { TierLadder } from "@/components/hub/TierLadder";
 import { UrgencySection } from "@/components/hub/UrgencySection";
+import { EarningsCalculator } from "@/components/shared/EarningsCalculator";
 
 export default function HubPage() {
   return (
@@ -21,6 +22,11 @@ export default function HubPage() {
       <GrandSlamOffer />
       <ProgramCards />
       <TierLadder />
+      {/* The interactive earnings calculator — proves the "compounding revenue
+          from one audience" thesis live, sits after the tiers so the user has
+          context for the numbers. defaultProgram="memo" highlights the EDGE
+          card (recurring revenue is the most striking demo). */}
+      <EarningsCalculator defaultProgram="memo" />
       <BonusStack />
       <ExclusivitySection />
       <FounderSection />

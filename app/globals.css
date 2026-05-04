@@ -242,6 +242,8 @@
   }
   html {
     @apply font-sans;
+    /* StickyHeader is ~64px tall — anchor jumps must land below it. */
+    scroll-padding-top: 80px;
   }
 }
 

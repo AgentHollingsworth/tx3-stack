@@ -1,6 +1,5 @@
 import { CTAButton } from "@/components/shared/CTAButton";
 import { PartnerSeal } from "@/components/shared/PartnerSeal";
-import { PrismaticRibbon } from "@/components/shared/PrismaticRibbon";
 
 /**
  * Hub page — Hero section (Section 7.1 of the brief).
@@ -13,7 +12,7 @@ export function Hero() {
       id="top"
       className="relative isolate overflow-hidden bg-tx3-black"
     >
-      <PrismaticRibbon thickness="medium" className="absolute inset-x-0 top-0 z-10" />
+      {/* Top prismatic ribbon is provided globally by <StickyHeader/>. */}
 
       {/* Ambient pillar-color glow blobs — very low opacity, decorative only. */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
@@ -31,18 +30,12 @@ export function Hero() {
           </span>
         </div>
 
-        {/* H1 */}
+        {/* H1 — 3-line stacked, sentence-anchored. Matches the design system mockup. */}
         <h1 className="h-hero">
-          The Only Affiliate Stack in Trading
-          <br className="hidden sm:block" />{" "}
-          That Pays You{" "}
-          <span className="text-stack-gradient">
-            Three Ways
-          </span>{" "}
-          From{" "}
-          <span className="text-gold-gradient">
-            One Audience.
-          </span>
+          One Audience.
+          <br />
+          <span className="text-stack-gradient">Three Brands.</span>{" "}
+          <span className="text-gold-gradient">Stacked.</span>
         </h1>
 
         {/* Subhead */}
