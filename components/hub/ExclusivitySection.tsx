@@ -81,10 +81,10 @@ export function ExclusivitySection() {
               <div className="mb-2 t-eyebrow text-tx3-gold">
                 The Official Partner Seal
               </div>
-              <h3 className="mb-4 font-display text-2xl font-bold leading-tight text-tx3-white md:text-3xl">
+              <h3 className="h-card mb-4">
                 Wear the proof.
               </h3>
-              <p className="text-tx3-off-white/85 md:text-lg">
+              <p className="t-lead">
                 Display the gold TX3 Partner Seal on your site, your social
                 bios, your YouTube channel. Approved partners only — issued
                 once you're inside the stack.
@@ -112,7 +112,7 @@ export function ExclusivitySection() {
               <h4 className="mb-2 font-display text-lg font-bold text-tx3-white">
                 {tile.title}
               </h4>
-              <p className="text-sm text-tx3-off-white/80">{tile.body}</p>
+              <p className="t-small">{tile.body}</p>
             </div>
           ))}
         </div>
