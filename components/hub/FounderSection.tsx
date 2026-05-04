@@ -2,7 +2,7 @@ import { PrismaticRibbon } from "@/components/shared/PrismaticRibbon";
 import { P } from "@/components/shared/Placeholder";
 import { cn } from "@/lib/utils";
 
-type Founder = {
+type Person = {
   initials: string;
   name: string;
   role: string;
@@ -10,43 +10,47 @@ type Founder = {
   silhouette: string;
 };
 
-const FOUNDERS: Founder[] = [
-  {
-    initials: "C",
-    name: "Cue",
-    role: "Founder",
-    silhouette: "bg-edge-gradient",
-  },
-  {
-    initials: "A",
-    name: "Anthony",
-    role: "Founder",
-    silhouette: "bg-earn-gradient",
-  },
-  {
-    initials: "JH",
-    name: "Jamal Hollingsworth",
-    role: "COO",
-    silhouette: "bg-gold-gradient",
-  },
-];
+const QUILLAN: Person = {
+  initials: "QB",
+  name: "Quillan Black",
+  role: "Founder",
+  silhouette: "bg-gold-gradient",
+};
+const ANTHONY: Person = {
+  initials: "AW",
+  name: "Anthony Williams",
+  role: "Founder",
+  silhouette: "bg-gold-gradient",
+};
+const NICOLAS: Person = {
+  initials: "NC",
+  name: "Nicolas Castillo",
+  role: "CEO",
+  silhouette: "bg-edge-gradient",
+};
+const JAMAL: Person = {
+  initials: "JH",
+  name: "Jamal Hollingsworth",
+  role: "COO",
+  silhouette: "bg-earn-gradient",
+};
 
-function FounderCard({ founder }: { founder: Founder }) {
+function PersonCard({ person }: { person: Person }) {
   return (
     <div className="flex flex-col items-center rounded-2xl border border-tx3-border bg-tx3-charcoal p-6 text-center transition-colors hover:border-tx3-muted/40">
       <div
         className={cn(
           "mb-4 flex size-20 items-center justify-center rounded-full font-display text-xl font-extrabold text-tx3-black ring-2 ring-inset ring-tx3-black/20",
-          founder.silhouette,
+          person.silhouette,
         )}
       >
-        {founder.initials}
+        {person.initials}
       </div>
       <div className="font-display text-lg font-bold text-tx3-white">
-        {founder.name}
+        {person.name}
       </div>
       <div className="mt-1 t-eyebrow">
-        {founder.role}
+        {person.role}
       </div>
     </div>
   );
@@ -121,15 +125,27 @@ export function FounderSection() {
           arm. Market Memo is the analytics layer.
         </p>
 
-        {/* Founders */}
+        {/* The People — pyramid hierarchy: founders / CEO / COO */}
         <div className="mx-auto mt-16 max-w-4xl">
           <div className="mb-6 text-center t-eyebrow">
             The People
           </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {FOUNDERS.map((f) => (
-              <FounderCard key={f.name} founder={f} />
-            ))}
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-4 sm:gap-8">
+            {/* Tier 1 — co-founders, side by side */}
+            <div className="sm:col-span-2">
+              <PersonCard person={QUILLAN} />
+            </div>
+            <div className="sm:col-span-2">
+              <PersonCard person={ANTHONY} />
+            </div>
+            {/* Tier 2 — CEO, centered */}
+            <div className="sm:col-span-2 sm:col-start-2">
+              <PersonCard person={NICOLAS} />
+            </div>
+            {/* Tier 3 — COO, centered */}
+            <div className="sm:col-span-2 sm:col-start-2">
+              <PersonCard person={JAMAL} />
+            </div>
           </div>
         </div>
       </div>

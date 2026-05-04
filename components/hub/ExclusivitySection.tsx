@@ -15,7 +15,7 @@ const TILES: SmallTile[] = [
     title: "Private Partner Community",
     body: (
       <>
-        Direct access to founders Cue, Anthony, and the operations team.{" "}
+        Direct access to founders Quillan, Anthony, and the operations team.{" "}
         <P>[PLATFORM: TBD — Slack | Discord]</P>
       </>
     ),
