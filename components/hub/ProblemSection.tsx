@@ -35,7 +35,10 @@ export function ProblemSection() {
             The Problem
           </div>
           <h2 className="h-section">
-            Why most trading affiliate programs leave money on the table.
+            Why most trading affiliate programs{" "}
+            <span className="text-gold-gradient">
+              leave money on the table.
+            </span>
           </h2>
           <PrismaticRibbon thickness="thin" className="mt-6 max-w-32" />
         </div>
@@ -46,10 +49,10 @@ export function ProblemSection() {
               <div className="mb-4 t-eyebrow">
                 {pain.n}
               </div>
-              <h3 className="mb-3 font-display text-xl font-bold text-tx3-white md:text-2xl">
+              <h3 className="h-card mb-3">
                 {pain.title}
               </h3>
-              <p className="text-tx3-off-white/70">{pain.body}</p>
+              <p className="t-body text-tx3-off-white/75">{pain.body}</p>
             </PillarCard>
           ))}
         </div>
