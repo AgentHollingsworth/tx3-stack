@@ -21,9 +21,9 @@ const BONUSES: Bonus[] = [
     name: "The Edge Bonus",
     body: (
       <>
-        Refer audiences to Market Memo <em className="text-tx3-white">first</em>
-        , then convert them into Markets and Funding traders, and earn an
-        additional <P>[BONUS %: TBD]</P> on every conversion.
+        Refer to Memo <em className="text-tx3-white">first</em>. Convert to
+        Markets and Funding next. Earn an extra <P>[BONUS %: TBD]</P> on every
+        conversion.
       </>
     ),
     why: "Market Memo users have higher LTV across the entire stack.",
@@ -69,7 +69,7 @@ const BONUSES: Bonus[] = [
         additional <P>[BONUS %: TBD]</P> across your entire affiliate book.
       </>
     ),
-    why: "This is the bonus that turns affiliates into ambassadors.",
+    why: "Stacking compounds. Single-program promotion taps out.",
   },
 ];
 
