@@ -114,12 +114,12 @@ export function BonusStack() {
               </div>
 
               {/* Bonus name (headline) */}
-              <h3 className="mb-5 font-display text-2xl leading-tight font-bold text-tx3-white md:text-3xl">
+              <h3 className="h-card mb-5">
                 {bonus.name}
               </h3>
 
               {/* Body */}
-              <p className="text-tx3-off-white/85">{bonus.body}</p>
+              <p className="t-body">{bonus.body}</p>
 
               {/* Optional eligibility */}
               {bonus.eligibility && (
