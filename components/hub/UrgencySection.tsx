@@ -16,7 +16,7 @@ const PERKS = [
   },
   {
     icon: Sparkles,
-    title: "Priority placement",
+    title: "Co-marketing slots",
     body: <>First in line in launch campaigns and co-marketing pushes.</>,
   },
   {
@@ -94,7 +94,7 @@ export function UrgencySection() {
             {/* Closing line + CTA */}
             <div className="mt-8 flex flex-col items-start gap-4 border-t border-tx3-border pt-6 md:flex-row md:items-center md:justify-between">
               <p className="font-display text-sm italic text-tx3-off-white/85 md:text-base">
-                Application window closes when the cohort fills.
+                Cohort capped at <P>[N: TBD]</P>. Window closes when full.
               </p>
               <CTAButton variant="primary" size="md" href="/apply">
                 Claim a founding spot →
