@@ -262,7 +262,7 @@ export function GrandSlamOffer() {
             </span>
           </h2>
           <p className="mt-4 text-tx3-off-white/70 md:text-lg">
-            One application. One audience. Twelve ways to earn — stacked.
+            One application. One audience. Twelve revenue lines — stacked.
           </p>
         </div>
 
@@ -313,7 +313,7 @@ export function GrandSlamOffer() {
                 Total Stated Value
               </div>
               <p className="t-lead">
-                If maxed across all four programs:
+                Stack all four programs:
               </p>
               <p className="mt-3 h-stat">
                 <span className="text-gold-gradient">
