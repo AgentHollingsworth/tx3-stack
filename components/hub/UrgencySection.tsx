@@ -61,14 +61,14 @@ export function UrgencySection() {
                 Founding Partner Cohort · Limited Window
               </span>
             </div>
-            <h2 className="font-display text-2xl font-bold leading-tight text-tx3-white md:text-4xl">
+            <h2 className="h-section">
               Founding TX3 Stack Partners get{" "}
               <span className="text-gold-gradient">
                 locked-in benefits.
               </span>
             </h2>
 
-            <p className="mt-4 text-tx3-off-white/85 md:text-lg">
+            <p className="mt-4 t-lead">
               The first <P>[N: TBD]</P> approved partners receive perks no later
               cohort will:
             </p>
@@ -86,7 +86,7 @@ export function UrgencySection() {
                   <div className="mb-1 font-display text-base font-bold text-tx3-white">
                     {title}
                   </div>
-                  <p className="text-sm text-tx3-off-white/80">{body}</p>
+                  <p className="t-small">{body}</p>
                 </li>
               ))}
             </ul>
