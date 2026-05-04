@@ -26,7 +26,7 @@ const TILES: SmallTile[] = [
     body: (
       <>
         Quarterly leaderboards. Featured partner spotlights. Monthly winner
-        announcements. <P>[DETAILS: TBD]</P>
+        announcements.
       </>
     ),
   },
@@ -92,7 +92,7 @@ export function ExclusivitySection() {
               <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-tx3-border bg-tx3-near-black px-3 py-1">
                 <span className="size-1.5 rounded-full bg-tx3-gold shadow-[0_0_10px_rgba(255,184,31,0.8)]" />
                 <span className="t-eyebrow text-tx3-off-white/80">
-                  Recognition is the reward
+                  Approved partners only
                 </span>
               </div>
             </div>
