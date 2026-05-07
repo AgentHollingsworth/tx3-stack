@@ -24,7 +24,7 @@ import { TraderSideValue } from "@/components/deep-dive/TraderSideValue";
 import { P } from "@/components/shared/Placeholder";
 
 export const metadata = {
-  title: "TX3 Markets — Affiliate Program · TX3 Stack",
+  title: "TX3 Markets — Affiliate Program · TX3 Group",
   description:
     "$12/lot direct + $3/lot indirect commission. The only multi-tier IB structure in the stack.",
 };
@@ -34,7 +34,7 @@ export default function MarketsPage() {
     <main>
       <DeepDiveHero
         pillar="execution"
-        eyebrow="TX3 STACK · EXECUTION"
+        eyebrow="TX3 GROUP · EXECUTION"
         brand="markets"
         brandOrientation="horizontal"
         brandWidth={260}
@@ -59,7 +59,7 @@ export default function MarketsPage() {
           label: "Become a TX3 Markets Partner →",
           href: "/apply?program=markets",
         }}
-        secondaryCta={{ label: "← Back to TX3 Stack overview", href: "/" }}
+        secondaryCta={{ label: "← Back to TX3 Group overview", href: "/" }}
       />
 
       <ProgramOverview

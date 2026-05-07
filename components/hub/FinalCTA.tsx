@@ -59,14 +59,14 @@ export function FinalCTA() {
           Approval in 1–3 business days. Weekly payouts at top tiers. No
           shadow-banning, no surprise holds.{" "}
           <strong className="font-semibold text-tx3-white">
-            The TX3 Stack opens once — get in.
+            The TX3 Group opens once — get in.
           </strong>
         </p>
 
         {/* CTA pair */}
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
           <CTAButton variant="primary" size="xl" href="/apply">
-            Become a TX3 Stack Partner →
+            Become a TX3 Group Partner →
           </CTAButton>
           <CTAButton variant="secondary" size="xl" href="#offer">
             Re-read the offer

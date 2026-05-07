@@ -47,8 +47,10 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-[1.4fr_2fr]">
           {/* Brand block */}
           <div>
-            <Link href="/" aria-label="TX3 Stack home" className="inline-block">
-              <BrandLogo brand="stack" variant="light" width={160} />
+            <Link href="/" aria-label="TX3 Group home" className="inline-block">
+              <span className="font-display text-2xl font-extrabold tracking-tight whitespace-nowrap text-tx3-white">
+                TX3 Group
+              </span>
             </Link>
             <p className="mt-4 max-w-sm text-sm text-tx3-muted">
               The elite affiliate program for the trading industry. One
@@ -92,7 +94,7 @@ export function Footer() {
             result, you may lose more than your original investment. Past
             performance is not indicative of future results. You should
             carefully consider your investment objectives, level of experience,
-            and risk appetite before participating. The TX3 Stack affiliate
+            and risk appetite before participating. The TX3 Group affiliate
             program advertises trading-related products and services; nothing
             on this site constitutes investment advice.
           </p>

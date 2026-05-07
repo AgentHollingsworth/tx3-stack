@@ -161,7 +161,7 @@ export function SocialProofSidebar() {
           </span>
         </div>
         <p className="text-[10px] leading-snug text-tx3-muted">
-          Trading involves substantial risk. The TX3 Stack affiliate program
+          Trading involves substantial risk. The TX3 Group affiliate program
           advertises trading-related products; nothing on this page constitutes
           investment advice.
         </p>

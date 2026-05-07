@@ -19,7 +19,7 @@ const FAQS: QA[] = [
       <>
         Each brand pays out on its own cadence — Memo monthly, Funding weekly
         at Gold tier and above, Markets monthly with the IB tree settled
-        end-of-month. Your TX3 Stack dashboard surfaces every payout in one
+        end-of-month. Your TX3 Group dashboard surfaces every payout in one
         place so you don't have to track three separate programs.
       </>
     ),

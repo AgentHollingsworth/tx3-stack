@@ -62,7 +62,7 @@ export function UrgencySection() {
               </span>
             </div>
             <h2 className="h-section">
-              Founding TX3 Stack Partners get{" "}
+              Founding TX3 Group Partners get{" "}
               <span className="text-gold-gradient">
                 locked-in benefits.
               </span>

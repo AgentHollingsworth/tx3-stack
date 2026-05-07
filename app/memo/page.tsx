@@ -29,7 +29,7 @@ import { TraderSideValue } from "@/components/deep-dive/TraderSideValue";
 import { P } from "@/components/shared/Placeholder";
 
 export const metadata = {
-  title: "Market Memo — Affiliate Program · TX3 Stack",
+  title: "Market Memo — Affiliate Program · TX3 Group",
   description:
     "15% lifetime recurring SaaS commission. Sticky product. Compounding payouts.",
 };
@@ -39,7 +39,7 @@ export default function MemoPage() {
     <main>
       <DeepDiveHero
         pillar="edge"
-        eyebrow="TX3 STACK · EDGE"
+        eyebrow="TX3 GROUP · EDGE"
         brand="memo"
         brandOrientation="horizontal"
         brandWidth={280}
@@ -64,7 +64,7 @@ export default function MemoPage() {
           label: "Become a Market Memo Partner →",
           href: "/apply?program=memo",
         }}
-        secondaryCta={{ label: "← Back to TX3 Stack overview", href: "/" }}
+        secondaryCta={{ label: "← Back to TX3 Group overview", href: "/" }}
       />
 
       <ProgramOverview

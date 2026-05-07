@@ -60,7 +60,7 @@ export function ProblemSection() {
         <p className="mx-auto mt-16 max-w-3xl text-center t-pullquote">
           One program, one sale, dead audience.{" "}
           <span className="font-semibold not-italic text-tx3-white">
-            The TX3 Stack pays you on every step after the first.
+            The TX3 Group pays you on every step after the first.
           </span>
         </p>
       </div>

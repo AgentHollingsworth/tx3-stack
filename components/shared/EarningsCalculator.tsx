@@ -298,7 +298,7 @@ export function EarningsCalculator({ defaultProgram = "memo" }: Props) {
           <h2 className="h-section">
             See your{" "}
             <span className="text-stack-gradient">
-              TX3 Stack earnings
+              TX3 Group earnings
             </span>
           </h2>
           <p className="mt-4 text-tx3-off-white/75 md:text-lg">
@@ -464,7 +464,7 @@ export function EarningsCalculator({ defaultProgram = "memo" }: Props) {
                 <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                   <div>
                     <div className="t-eyebrow text-tx3-gold">
-                      Total TX3 Stack Earnings
+                      Total TX3 Group Earnings
                     </div>
                     <p className="mt-1 max-w-md text-sm text-tx3-off-white/70">
                       From one audience. Three brands. Compounding revenue.

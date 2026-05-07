@@ -27,7 +27,7 @@ import { P } from "@/components/shared/Placeholder";
 import { cn } from "@/lib/utils";
 
 export const metadata = {
-  title: "TX3 Funding Futures — Affiliate Program · TX3 Stack",
+  title: "TX3 Funding Futures — Affiliate Program · TX3 Group",
   description:
     "10–15% commission on every futures challenge. Powered by Topstep. Massive untapped audience.",
 };
@@ -65,7 +65,7 @@ export default function FundingFuturesPage() {
     <main>
       <DeepDiveHero
         pillar="earn"
-        eyebrow="TX3 STACK · EARN · FUTURES"
+        eyebrow="TX3 GROUP · EARN · FUTURES"
         brand="funding"
         brandOrientation="horizontal"
         brandWidth={260}
@@ -89,7 +89,7 @@ export default function FundingFuturesPage() {
           label: "Become a Funding Futures Partner →",
           href: "/apply?program=funding-futures",
         }}
-        secondaryCta={{ label: "← Back to TX3 Stack overview", href: "/" }}
+        secondaryCta={{ label: "← Back to TX3 Group overview", href: "/" }}
       />
 
       <ProgramOverview
@@ -100,7 +100,7 @@ export default function FundingFuturesPage() {
             <p>
               <P>[PLACEHOLDER: Paragraph 1 — Topstep partnership structure. How
               TX3 Funding Futures delivers Topstep-backed funding under the
-              TX3 Stack umbrella.]</P>
+              TX3 Group umbrella.]</P>
             </p>
             <p>
               <P>[PLACEHOLDER: Paragraph 2 — Futures market opportunity. Why the
@@ -239,7 +239,7 @@ export default function FundingFuturesPage() {
               </div>
               <h3 className="font-display text-xl font-bold text-tx3-white md:text-2xl">
                 The most-trusted name in futures prop, white-labeled into the
-                TX3 Stack.
+                TX3 Group.
               </h3>
               <p className="mt-2 text-sm text-tx3-off-white/80">
                 Co-branded materials, integrated tracking, and the same

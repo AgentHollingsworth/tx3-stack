@@ -17,7 +17,7 @@ type PrismaticRibbonProps = {
 };
 
 /**
- * The TX3 Stack visual signature — a thin prismatic gradient line.
+ * The TX3 Group visual signature — a thin prismatic gradient line.
  * Use as section divider, hero accent, or CTA underline.
  */
 export function PrismaticRibbon({

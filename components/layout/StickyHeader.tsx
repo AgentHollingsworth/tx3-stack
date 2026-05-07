@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { BrandLogo } from "@/components/shared/BrandLogo";
 import { CTAButton } from "@/components/shared/CTAButton";
 import { cn } from "@/lib/utils";
 
@@ -14,7 +13,7 @@ import { cn } from "@/lib/utils";
  * Transparent at scroll-top, becomes blurred-black after scrollY > 12px,
  * with a 1px hairline border and the prismatic gradient accent below.
  *
- * Left:  TX3 Stack gradient logo → /
+ * Left:  TX3 Group gradient logo → /
  * Mid:   THE PROBLEM · THE STACK · THE OFFER · TIERS · FAQ
  *        (cross-page hash links so they work from /apply or any deep-dive)
  * Right: gold "Apply →" pill → /apply
@@ -62,11 +61,13 @@ export function StickyHeader() {
         {/* Logo */}
         <Link
           href="/"
-          aria-label="TX3 Stack home"
+          aria-label="TX3 Group home"
           className="flex shrink-0 items-center"
           onClick={() => setMobileOpen(false)}
         >
-          <BrandLogo brand="stack" variant="color" width={88} />
+          <span className="font-display text-lg font-extrabold tracking-tight whitespace-nowrap text-tx3-white">
+            TX3 Group
+          </span>
         </Link>
 
         {/* Desktop nav */}

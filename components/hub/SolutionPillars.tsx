@@ -64,7 +64,7 @@ const PILLARS: PillarSpec[] = [
 ];
 
 /**
- * Hub page — The TX3 Stack Solution / three-pillar reveal (Section 7.3).
+ * Hub page — The TX3 Group Solution / three-pillar reveal (Section 7.3).
  * The visual answer to ProblemSection — three vertical pillars headed by a
  * single word in the pillar's accent color, with brand logo and the value
  * statement.
@@ -78,7 +78,7 @@ export function SolutionPillars() {
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="mb-16 max-w-3xl">
           <div className="mb-3 t-eyebrow">
-            The TX3 Stack
+            The TX3 Group
           </div>
           <h2 className="h-section">
             Three brands. One audience.{" "}

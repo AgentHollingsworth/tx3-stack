@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TX3 Stack — Edge. Execution. Earn.",
+  title: "TX3 Group — Edge. Execution. Earn.",
   description:
     "The only affiliate stack in trading that pays you three ways from one audience. Promote Market Memo, TX3 Markets, and TX3 Funding from a single hub.",
 };

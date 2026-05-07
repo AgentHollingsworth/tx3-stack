@@ -534,7 +534,7 @@ function Step2({
       {/* Why TX3 textarea */}
       <div className="mt-8">
         <Field
-          label="Why TX3 Stack?"
+          label="Why TX3 Group?"
           required
           htmlFor="whyTx3"
           hint={
@@ -549,7 +549,7 @@ function Step2({
             rows={5}
             value={data.whyTx3}
             onChange={(e) => update("whyTx3", e.target.value)}
-            placeholder="Tell us about your audience and why TX3 Stack is the right fit. The more specific, the better."
+            placeholder="Tell us about your audience and why TX3 Group is the right fit. The more specific, the better."
           />
         </Field>
       </div>
@@ -660,7 +660,7 @@ function Step3({
           />
         </Field>
 
-        <Field label="How did you hear about TX3 Stack?" required htmlFor="hearAbout">
+        <Field label="How did you hear about TX3 Group?" required htmlFor="hearAbout">
           <Select
             id="hearAbout"
             value={data.hearAbout}
@@ -713,13 +713,13 @@ function Step3({
           checked={data.agreeApproval}
           onChange={(b) => update("agreeApproval", b)}
         >
-          I understand that approval is at TX3 Stack's discretion.
+          I understand that approval is at TX3 Group's discretion.
         </CheckboxRow>
         <CheckboxRow
           checked={data.agreeContact}
           onChange={(b) => update("agreeContact", b)}
         >
-          I consent to TX3 Stack contacting me regarding my application.
+          I consent to TX3 Group contacting me regarding my application.
         </CheckboxRow>
       </div>
 

@@ -4,9 +4,9 @@ import { ApplyHero } from "@/components/apply/ApplyHero";
 import { SocialProofSidebar } from "@/components/apply/SocialProofSidebar";
 
 export const metadata = {
-  title: "Apply — TX3 Stack Partners",
+  title: "Apply — TX3 Group Partners",
   description:
-    "Apply now to become a TX3 Stack Partner. Three brands. One audience. Compounding revenue.",
+    "Apply now to become a TX3 Group Partner. Three brands. One audience. Compounding revenue.",
 };
 
 /**

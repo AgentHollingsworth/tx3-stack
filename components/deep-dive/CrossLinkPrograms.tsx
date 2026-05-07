@@ -116,7 +116,7 @@ export function CrossLinkPrograms({ currentProgram }: Props) {
         {/* Section header */}
         <div className="mx-auto mb-12 max-w-3xl text-center md:mb-14">
           <div className="mb-3 t-eyebrow text-tx3-gold">
-            TX3 Stack
+            TX3 Group
           </div>
           <h2 className="h-section">
             One audience. Three brands.{" "}

@@ -29,7 +29,7 @@ const MANIFEST: Record<
         src: "/logos/tx3-stack-white.svg",
         width: 360,
         height: 200,
-        alt: "TX3 Stack",
+        alt: "TX3 Group",
       },
     },
     color: {
@@ -37,7 +37,7 @@ const MANIFEST: Record<
         src: "/logos/tx3-stack-gradient.svg",
         width: 360,
         height: 200,
-        alt: "TX3 Stack",
+        alt: "TX3 Group",
       },
     },
   },

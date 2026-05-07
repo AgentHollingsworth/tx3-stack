@@ -53,7 +53,7 @@ export function RiskReversal() {
             Risk Reversal
           </div>
           <h2 className="h-section">
-            Why TX3 Stack pays out{" "}
+            Why TX3 Group pays out{" "}
             <span className="text-gold-gradient">
               when others don't.
             </span>

@@ -258,7 +258,7 @@ export function GrandSlamOffer() {
           <h2 className="h-section">
             What you get as a{" "}
             <span className="text-gold-gradient">
-              TX3 Stack Partner.
+              TX3 Group Partner.
             </span>
           </h2>
           <p className="mt-4 text-tx3-off-white/70 md:text-lg">
@@ -328,7 +328,7 @@ export function GrandSlamOffer() {
             {/* Closing CTA */}
             <div className="mt-10 flex flex-col items-center gap-4 md:mt-12">
               <CTAButton variant="primary" size="xl" href="/apply">
-                Apply to Become a TX3 Stack Partner →
+                Apply to Become a TX3 Group Partner →
               </CTAButton>
               <p className="t-eyebrow">
                 Approval in 1–3 business days

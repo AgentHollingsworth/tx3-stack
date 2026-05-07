@@ -1,6 +1,6 @@
-# TX3 STACK — AFFILIATE HUB PROJECT BRIEF
+# TX3 GROUP — AFFILIATE HUB PROJECT BRIEF
 
-> **Master spec for Claude Code.** This document is the source of truth for the TX3 Stack affiliate hub website. Paste this into Claude Code on day one as your project context.
+> **Master spec for Claude Code.** This document is the source of truth for the TX3 Group affiliate hub website. Paste this into Claude Code on day one as your project context.
 
 **Repo:** `tx3-stack`
 **Owner:** AgentHollingsworth
@@ -14,7 +14,7 @@
 
 Build a Hormozi-grade affiliate recruitment hub that consolidates **three brands and four affiliate programs** under a single, conversion-driven destination.
 
-**The Big Idea:** TX3 Stack is the only affiliate program in trading that pays you across the **complete trader journey** — Edge, Execution, and Earn — from one audience.
+**The Big Idea:** TX3 Group is the only affiliate program in trading that pays you across the **complete trader journey** — Edge, Execution, and Earn — from one audience.
 
 **Primary KPI:** Approved affiliate applications.
 **Secondary KPI:** Tier-up commitments (affiliates who explicitly want the Triple Stack track).
@@ -60,7 +60,7 @@ tx3stack.com/
 ### 4.1 Color Architecture
 
 ```css
-/* TX3 STACK — PARENT BRAND */
+/* TX3 GROUP — PARENT BRAND */
 --tx3-black:        #000000;   /* Primary background */
 --tx3-near-black:   #0A0A0A;   /* Section backgrounds */
 --tx3-charcoal:     #141414;   /* Card backgrounds */
@@ -87,7 +87,7 @@ tx3stack.com/
 --earn-blue:        #1565F0;   /* Gradient end */
 --earn-glow:        rgba(63, 226, 107, 0.4);
 
-/* TX3 STACK SIGNATURE PRISMATIC GRADIENT */
+/* TX3 GROUP SIGNATURE PRISMATIC GRADIENT */
 --stack-gradient: linear-gradient(
   90deg,
   #FFB81F 0%,      /* Markets gold */
@@ -115,15 +115,15 @@ tx3stack.com/
 
 ### 4.4 Signature Visual Elements
 
-- **The Prismatic Ribbon** — a thin (`h-1` to `h-2`) gradient line using `--stack-gradient`, used as section divider, hero accent, and CTA underline. **This is the TX3 Stack visual signature.**
+- **The Prismatic Ribbon** — a thin (`h-1` to `h-2`) gradient line using `--stack-gradient`, used as section divider, hero accent, and CTA underline. **This is the TX3 Group visual signature.**
 - **Pillar glow cards** — pillar sections (Edge/Execution/Earn) use a subtle radial glow in their accent color, creating visual identity per pillar without overwhelming the page.
 - **The Partner Seal** — the gold "OFFICIAL TX3 PARTNER" badge appears as a recurring trust/aspiration symbol throughout the page. It's the visible status reward.
 
 ---
 
-## 5. TX3 STACK PARENT IDENTITY
+## 5. TX3 GROUP PARENT IDENTITY
 
-Since you don't have a TX3 Stack logo yet, here's the construction guide:
+Since you don't have a TX3 Group logo yet, here's the construction guide:
 
 ### Recommended Approach: "TX3" wordmark + "STACK" lockup
 
@@ -182,7 +182,7 @@ The hub page is the long-scroll Hormozi sales page. Here is every section in ord
 **Subheadline:**
 > Edge. Execution. Earn. Promote the complete trader journey across **three brands** and **four programs** — and earn on every stage your audience walks through.
 
-**Primary CTA:** `Become a TX3 Stack Partner →` (links to `/apply`)
+**Primary CTA:** `Become a TX3 Group Partner →` (links to `/apply`)
 **Secondary CTA:** `See the numbers ↓` (anchors to Grand Slam Offer section)
 
 **Trust strip beneath CTAs:**
@@ -201,9 +201,9 @@ The hub page is the long-scroll Hormozi sales page. Here is every section in ord
 3. **Dead audience after one sale.** You sold them a challenge. Now what? They wash out. Your link goes cold. You start over.
 
 **Closing line for section:**
-> *Promoting one program means you monetize one moment. The TX3 Stack lets you monetize the whole journey.*
+> *Promoting one program means you monetize one moment. The TX3 Group lets you monetize the whole journey.*
 
-### 7.3 The TX3 Stack Solution
+### 7.3 The TX3 Group Solution
 
 **Section heading:** Three brands. One audience. Compounding revenue.
 
@@ -229,7 +229,7 @@ For each pillar, show:
 
 ### 7.4 The Grand Slam Offer
 
-**Section heading:** What you get as a TX3 Stack Partner.
+**Section heading:** What you get as a TX3 Group Partner.
 
 This is the **central conversion section**. Style it as a stacked offer block — Hormozi value-stack format. Each item has a "value" anchor.
 
@@ -255,7 +255,7 @@ This is the **central conversion section**. Style it as a stacked offer block �
 **Total stated value line (Hormozi staple):**
 > Total real-world value if maxed across all four programs: **`[$XXX,XXX+ /year — TBD]`**
 
-**Closing CTA:** `Apply to Become a TX3 Stack Partner →`
+**Closing CTA:** `Apply to Become a TX3 Group Partner →`
 
 > ⚠️ **Placeholder note for Jamal:** Every `[BRACKETED]` value above is a placeholder for you to fill in once final bonus economics are decided. Keep the brackets visible in dev so they're impossible to miss before launch.
 
@@ -330,7 +330,7 @@ Four bonus cards. Each has a custom icon/visual using its pillar color.
 
 #### Bonus 3 — The Earner's Circle
 *Pillar: Earn (green/blue gradient)*
-> The invite-only inner circle. Top affiliates across the entire TX3 Stack get co-marketing, retreats, direct line to founders, early access to product launches, and the gold Partner Seal.
+> The invite-only inner circle. Top affiliates across the entire TX3 Group get co-marketing, retreats, direct line to founders, early access to product launches, and the gold Partner Seal.
 > **Eligibility:** Top `[N: TBD]` affiliates per quarter, or auto-qualifying via TX3 Funding FX Elite tier.
 
 #### Bonus 4 — The Triple Stack Multiplier
@@ -364,7 +364,7 @@ Three small headshot/bio cards (or branded silhouettes if no headshots yet):
 
 ### 7.10 Risk Reversal
 
-**Section heading:** Why TX3 Stack pays out when others don't.
+**Section heading:** Why TX3 Group pays out when others don't.
 
 Four trust pillars (small icon + headline + one line):
 1. **On-time payouts** — Monthly minimum, weekly at top tiers. No exceptions.
@@ -377,7 +377,7 @@ Four trust pillars (small icon + headline + one line):
 **Section heading:** Founding Partner Cohort
 
 Box/banner visual:
-> **Founding TX3 Stack Partners get locked-in benefits.**
+> **Founding TX3 Group Partners get locked-in benefits.**
 >
 > The first `[N: TBD]` approved partners receive:
 > - `[FOUNDING BONUS: TBD]` — locked tier rate that never decreases
@@ -406,13 +406,13 @@ Full-width section, prismatic ribbon top and bottom.
 > Three brands. One audience. Compounding revenue.
 
 **Subhead:**
-> Apply now to become a founding TX3 Stack Partner.
+> Apply now to become a founding TX3 Group Partner.
 
-**Primary CTA:** `Apply to Become a TX3 Stack Partner →`
+**Primary CTA:** `Apply to Become a TX3 Group Partner →`
 
 ### 7.14 Footer
 
-- TX3 Stack logo (white)
+- TX3 Group logo (white)
 - Tagline: *Edge. Execution. Earn.*
 - Brand row: Market Memo logo • TX3 Markets logo • TX3 Funding logo (all white variants)
 - Links: Hub, Markets, Funding FX, Funding Futures, Memo, Apply, Privacy, Terms
@@ -641,7 +641,7 @@ Run this in your terminal, in order:
 
 ```bash
 # 1. Create the repo on GitHub
-gh repo create tx3-stack --public --description "TX3 Stack — Affiliate Hub. Edge. Execution. Earn."
+gh repo create tx3-stack --public --description "TX3 Group — Affiliate Hub. Edge. Execution. Earn."
 
 # 2. Clone locally
 gh repo clone AgentHollingsworth/tx3-stack
@@ -767,11 +767,11 @@ Centralizing all TBDs in one file means when you finalize numbers, you update on
 
 ## 15. NOTES & DECISIONS LOG
 
-- **Naming:** Brand = TX3 Stack. Program = TX3 Stack Partners. Tagline = Edge. Execution. Earn.
+- **Naming:** Brand = TX3 Group. Program = TX3 Group Partners. Tagline = Edge. Execution. Earn.
 - **Architecture:** Hybrid (hub + deep-dive pages).
 - **Audience:** Primary = established trading educators with audiences. Secondary = TTT/TX3 customer-advocates and cold affiliate marketers. Copy must speak to all three without alienating any.
 - **Incentive levers:** Triple-stacked — payouts + named bonuses + exclusivity/status. Lead with payouts (rational), escalate to bonuses (emotional), close with exclusivity (identity).
-- **Visual signature:** Prismatic ribbon (gold → green → teal → blue → cyan) as the TX3 Stack mark.
+- **Visual signature:** Prismatic ribbon (gold → green → teal → blue → cyan) as the TX3 Group mark.
 - **Heritage play:** "Formerly Top Tier Trader" used as trust-transfer device on TX3 Funding sections.
 - **Phase 2 ideas (parking lot):** Affiliate leaderboard, swipe file/creative resources page, partner portal, case study page, blog.
 

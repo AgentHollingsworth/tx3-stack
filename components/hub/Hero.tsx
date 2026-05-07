@@ -26,7 +26,7 @@ export function Hero() {
         <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-tx3-border bg-tx3-charcoal/60 px-4 py-1.5 backdrop-blur-sm">
           <span className="size-1.5 rounded-full bg-exec-gold shadow-[0_0_12px_rgba(255,184,31,0.8)]" />
           <span className="t-eyebrow text-tx3-off-white/80">
-            TX3 Stack · Edge. Execution. Earn.
+            TX3 Group · Edge. Execution. Earn.
           </span>
         </div>
 
@@ -50,7 +50,7 @@ export function Hero() {
         {/* CTAs */}
         <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row">
           <CTAButton variant="primary" size="lg" href="/apply">
-            Become a TX3 Stack Partner →
+            Become a TX3 Group Partner →
           </CTAButton>
           <CTAButton variant="secondary" size="lg" href="#offer">
             See the numbers ↓

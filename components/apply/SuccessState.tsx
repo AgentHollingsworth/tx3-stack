@@ -65,7 +65,7 @@ export function SuccessState() {
       </h2>
 
       <p className="mx-auto mt-4 max-w-xl text-tx3-off-white/85 md:text-lg">
-        We've got it. The TX3 Stack partnerships team will review your
+        We've got it. The TX3 Group partnerships team will review your
         application and reach out within{" "}
         <P>[REVIEW TIMEFRAME: TBD]</P> business days.
       </p>
@@ -93,7 +93,7 @@ export function SuccessState() {
       {/* CTA + email contact */}
       <div className="mt-10 flex flex-col items-center gap-4">
         <CTAButton variant="primary" size="lg" href="/">
-          Back to TX3 Stack Home →
+          Back to TX3 Group Home →
         </CTAButton>
         <p className="t-eyebrow">
           Have questions? Email <P>[PARTNER EMAIL: TBD]</P>

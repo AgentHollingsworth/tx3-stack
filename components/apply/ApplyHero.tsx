@@ -4,7 +4,7 @@ import { PrismaticRibbon } from "@/components/shared/PrismaticRibbon";
 
 /**
  * /apply hero — full-width, prismatic ribbon at top, eyebrow + H1 with
- * prismatic-gradient "TX3 Stack", subhead, and the trust strip.
+ * prismatic-gradient "TX3 Group", subhead, and the trust strip.
  */
 export function ApplyHero() {
   return (
@@ -32,7 +32,7 @@ export function ApplyHero() {
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tx3-border bg-tx3-charcoal/70 px-4 py-1.5 backdrop-blur-sm">
           <span className="size-1.5 rounded-full bg-tx3-gold shadow-[0_0_10px_rgba(255,184,31,0.7)]" />
           <span className="font-mono text-[11px] tracking-widest text-tx3-off-white/85 uppercase">
-            TX3 Stack · Apply
+            TX3 Group · Apply
           </span>
         </div>
 
@@ -40,7 +40,7 @@ export function ApplyHero() {
         <h1 className="h-hero">
           Become a{" "}
           <span className="text-stack-gradient">
-            TX3 Stack
+            TX3 Group
           </span>{" "}
           Partner
         </h1>

@@ -27,7 +27,7 @@ import { P } from "@/components/shared/Placeholder";
 import { cn } from "@/lib/utils";
 
 export const metadata = {
-  title: "TX3 Funding FX — Affiliate Program · TX3 Stack",
+  title: "TX3 Funding FX — Affiliate Program · TX3 Group",
   description:
     "5-tier commission ladder, up to 20% on every challenge sold, plus profit share on funded traders.",
 };
@@ -81,7 +81,7 @@ export default function FundingFxPage() {
     <main>
       <DeepDiveHero
         pillar="earn"
-        eyebrow="TX3 STACK · EARN · FX"
+        eyebrow="TX3 GROUP · EARN · FX"
         brand="funding"
         brandOrientation="horizontal"
         brandWidth={260}
@@ -106,7 +106,7 @@ export default function FundingFxPage() {
           label: "Become a Funding FX Partner →",
           href: "/apply?program=funding-fx",
         }}
-        secondaryCta={{ label: "← Back to TX3 Stack overview", href: "/" }}
+        secondaryCta={{ label: "← Back to TX3 Group overview", href: "/" }}
       />
 
       <ProgramOverview

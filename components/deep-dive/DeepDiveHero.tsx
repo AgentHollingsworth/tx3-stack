@@ -28,7 +28,7 @@ const PILLAR_STYLES: Record<
 
 type Props = {
   pillar: DeepDivePillar;
-  /** "TX3 STACK · EXECUTION" or "TX3 STACK · EARN · FX" etc. */
+  /** "TX3 GROUP · EXECUTION" or "TX3 GROUP · EARN · FX" etc. */
   eyebrow: string;
   brand: Brand;
   brandOrientation?: "horizontal" | "vertical";
