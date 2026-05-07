@@ -23,6 +23,10 @@ import { ProgramFAQ } from "@/components/deep-dive/ProgramFAQ";
 import { ProgramOverview } from "@/components/deep-dive/ProgramOverview";
 import { ToolsYouGet } from "@/components/deep-dive/ToolsYouGet";
 import { TraderSideValue } from "@/components/deep-dive/TraderSideValue";
+import { BonusStack } from "@/components/hub/BonusStack";
+import { ProblemSection } from "@/components/hub/ProblemSection";
+import { RiskReversal } from "@/components/hub/RiskReversal";
+import { UrgencySection } from "@/components/hub/UrgencySection";
 import { P } from "@/components/shared/Placeholder";
 import { cn } from "@/lib/utils";
 
@@ -91,6 +95,8 @@ export default function FundingFuturesPage() {
         }}
         secondaryCta={{ label: "← Back to TX3 Group overview", href: "/" }}
       />
+
+      <ProblemSection />
 
       <ProgramOverview
         pillar="earn"
@@ -264,6 +270,8 @@ export default function FundingFuturesPage() {
         </div>
       </PartnerCompensation>
 
+      <BonusStack />
+
       <EarningsCalculator defaultProgram="funding-futures" />
 
       <ToolsYouGet
@@ -301,6 +309,8 @@ export default function FundingFuturesPage() {
           },
         ]}
       />
+
+      <RiskReversal />
 
       <ProgramFAQ
         pillar="earn"
@@ -355,6 +365,8 @@ export default function FundingFuturesPage() {
           },
         ]}
       />
+
+      <UrgencySection />
 
       <CrossLinkPrograms currentProgram="funding-futures" />
 
