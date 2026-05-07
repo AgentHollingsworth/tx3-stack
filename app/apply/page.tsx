@@ -2,6 +2,8 @@ import { Suspense } from "react";
 import { ApplicationForm } from "@/components/apply/ApplicationForm";
 import { ApplyHero } from "@/components/apply/ApplyHero";
 import { SocialProofSidebar } from "@/components/apply/SocialProofSidebar";
+import { ExclusivitySection } from "@/components/hub/ExclusivitySection";
+import { GrandSlamOffer } from "@/components/hub/GrandSlamOffer";
 
 export const metadata = {
   title: "Apply — TX3 Group Partners",
@@ -34,6 +36,9 @@ export default function ApplyPage() {
     <main>
       <ApplyHero />
 
+      {/* Partner-seal credibility — what gets issued at approval */}
+      <ExclusivitySection />
+
       <section className="bg-tx3-near-black py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-12">
@@ -49,6 +54,10 @@ export default function ApplyPage() {
           </div>
         </div>
       </section>
+
+      {/* Comprehensive offer summary — sits below the form for scrollers
+          comparing the full TX3 Group value pack before they apply */}
+      <GrandSlamOffer />
     </main>
   );
 }
