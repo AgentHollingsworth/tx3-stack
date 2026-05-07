@@ -1,38 +1,27 @@
-import { BonusStack } from "@/components/hub/BonusStack";
-import { ExclusivitySection } from "@/components/hub/ExclusivitySection";
-import { FAQ } from "@/components/hub/FAQ";
 import { FinalCTA } from "@/components/hub/FinalCTA";
-import { FounderSection } from "@/components/hub/FounderSection";
-import { GrandSlamOffer } from "@/components/hub/GrandSlamOffer";
 import { Hero } from "@/components/hub/Hero";
-import { ProblemSection } from "@/components/hub/ProblemSection";
 import { ProgramCards } from "@/components/hub/ProgramCards";
-import { RiskReversal } from "@/components/hub/RiskReversal";
-import { SolutionPillars } from "@/components/hub/SolutionPillars";
-import { TierLadder } from "@/components/hub/TierLadder";
-import { UrgencySection } from "@/components/hub/UrgencySection";
-import { EarningsCalculator } from "@/components/shared/EarningsCalculator";
+import { WhyTX3Group } from "@/components/hub/WhyTX3Group";
 
+/**
+ * Hub page — the simplified TX3 Group landing page.
+ *
+ * Hub-and-spoke IA: the hub answers "what is TX3 Group" in four sections
+ * (hero · 3-product grid · capability tiles · closing CTA), and every
+ * deeper sales motion (Problem, GrandSlam, Bonuses, Exclusivity, Founders,
+ * RiskReversal, Urgency, FAQ, Calculator, TierLadder) lives on the
+ * destination it actually serves — deep-dives for the trader-side pitch,
+ * /apply for the closing pitch, /about for the credibility story.
+ *
+ * Section components for the moved sections still live in components/hub/
+ * — they're imported by the deep-dive pages, /apply, and /about now.
+ */
 export default function HubPage() {
   return (
     <>
       <Hero />
-      <ProblemSection />
-      <SolutionPillars />
-      <GrandSlamOffer />
       <ProgramCards />
-      <TierLadder />
-      {/* The interactive earnings calculator — proves the "compounding revenue
-          from one audience" thesis live, sits after the tiers so the user has
-          context for the numbers. defaultProgram="memo" highlights the EDGE
-          card (recurring revenue is the most striking demo). */}
-      <EarningsCalculator defaultProgram="memo" />
-      <BonusStack />
-      <ExclusivitySection />
-      <FounderSection />
-      <RiskReversal />
-      <UrgencySection />
-      <FAQ />
+      <WhyTX3Group />
       <FinalCTA />
     </>
   );
