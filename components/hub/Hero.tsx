@@ -39,12 +39,11 @@ export function Hero() {
         </h1>
 
         {/* Subhead */}
-        <p className="mt-8 max-w-3xl text-lg text-tx3-off-white/80 md:text-xl">
-          Edge. Execution. Earn. Promote the complete trader journey across{" "}
-          <strong className="font-semibold text-tx3-white">three brands</strong>{" "}
-          and{" "}
-          <strong className="font-semibold text-tx3-white">four programs</strong>{" "}
-          — and earn on every stage your audience walks through.
+        <p className="mt-8 max-w-2xl text-lg text-tx3-off-white/80 md:text-xl">
+          <strong className="font-semibold text-tx3-white">Three brands.</strong>{" "}
+          <strong className="font-semibold text-tx3-white">Four programs.</strong>{" "}
+          One application. Earn on every step your audience takes through the
+          trader journey.
         </p>
 
         {/* CTAs */}
@@ -52,8 +51,8 @@ export function Hero() {
           <CTAButton variant="primary" size="lg" href="/apply">
             Become a TX3 Group Partner →
           </CTAButton>
-          <CTAButton variant="secondary" size="lg" href="#offer">
-            See the numbers ↓
+          <CTAButton variant="secondary" size="lg" href="#programs">
+            Explore the programs ↓
           </CTAButton>
         </div>
 
