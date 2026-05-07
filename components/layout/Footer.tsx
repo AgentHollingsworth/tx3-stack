@@ -29,8 +29,8 @@ const LINK_GROUPS: LinkGroup[] = [
   {
     heading: "Company",
     links: [
-      { label: "About", href: "/" },
-      { label: "Heritage · Top Tier Trader", href: "/funding-fx" },
+      { label: "About", href: "/about" },
+      { label: "Heritage · Top Tier Trader", href: "/about" },
       { label: "Press", href: "/" },
       { label: "Contact", href: "/apply" },
     ],
