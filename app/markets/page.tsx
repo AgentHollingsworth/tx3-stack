@@ -21,6 +21,10 @@ import { ProgramFAQ } from "@/components/deep-dive/ProgramFAQ";
 import { ProgramOverview } from "@/components/deep-dive/ProgramOverview";
 import { ToolsYouGet } from "@/components/deep-dive/ToolsYouGet";
 import { TraderSideValue } from "@/components/deep-dive/TraderSideValue";
+import { BonusStack } from "@/components/hub/BonusStack";
+import { ProblemSection } from "@/components/hub/ProblemSection";
+import { RiskReversal } from "@/components/hub/RiskReversal";
+import { UrgencySection } from "@/components/hub/UrgencySection";
 import { P } from "@/components/shared/Placeholder";
 
 export const metadata = {
@@ -61,6 +65,8 @@ export default function MarketsPage() {
         }}
         secondaryCta={{ label: "← Back to TX3 Group overview", href: "/" }}
       />
+
+      <ProblemSection />
 
       <ProgramOverview
         pillar="execution"
@@ -256,6 +262,8 @@ export default function MarketsPage() {
         </div>
       </PartnerCompensation>
 
+      <BonusStack />
+
       <EarningsCalculator defaultProgram="markets" />
 
       <ToolsYouGet
@@ -293,6 +301,8 @@ export default function MarketsPage() {
           },
         ]}
       />
+
+      <RiskReversal />
 
       <ProgramFAQ
         pillar="execution"
@@ -343,6 +353,8 @@ export default function MarketsPage() {
           },
         ]}
       />
+
+      <UrgencySection />
 
       <CrossLinkPrograms currentProgram="markets" />
 
