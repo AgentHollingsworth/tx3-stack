@@ -20,11 +20,11 @@ import { cn } from "@/lib/utils";
  */
 
 const NAV_LINKS = [
-  { label: "The problem", href: "/#problem" },
-  { label: "The stack", href: "/#solution" },
-  { label: "The offer", href: "/#offer" },
-  { label: "Tiers", href: "/#tiers" },
-  { label: "FAQ", href: "/#faq" },
+  { label: "The problem", href: "/problem" },
+  { label: "The stack", href: "/stack" },
+  { label: "The offer", href: "/offer" },
+  { label: "Tiers", href: "/tiers" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 export function StickyHeader() {

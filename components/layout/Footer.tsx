@@ -21,8 +21,9 @@ const LINK_GROUPS: LinkGroup[] = [
     heading: "Partners",
     links: [
       { label: "Apply", href: "/apply" },
-      { label: "FAQ", href: "/#faq" },
-      { label: "Tier ladder", href: "/#tiers" },
+      { label: "Earnings calculator", href: "/calculator" },
+      { label: "Tier ladder", href: "/tiers" },
+      { label: "FAQ", href: "/faq" },
       { label: "Partner support", href: "/apply" },
     ],
   },
